@@ -412,4 +412,15 @@ Wire Wire Line
 Wire Wire Line
 	4000 2000 4000 3000
 Connection ~ 4000 3000
+$Comp
+L custom_parts:CD4555BE U?
+U 1 1 5E5D1E6A
+P 8250 1800
+F 0 "U?" H 8250 2565 50  0000 C CNN
+F 1 "CD4555BE" H 8250 2474 50  0000 C CNN
+F 2 "" H 8200 2100 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd4555b.pdf" H 8200 2100 50  0001 C CNN
+	1    8250 1800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
