@@ -4,4 +4,8 @@ $CMP CD4555BE
 F https://www.ti.com/lit/ds/symlink/cd4555b.pdf
 $ENDCMP
 #
+$CMP SN74HC148N
+F https://www.ti.com/lit/ds/symlink/sn74hc148.pdf
+$ENDCMP
+#
 #End Doc Library
