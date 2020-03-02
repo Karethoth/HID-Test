@@ -104,10 +104,8 @@ F 3 "" H 5650 1050 50  0001 C CNN
 	1    5650 1050
 	1    0    0    -1  
 $EndComp
-Text GLabel 6400 2100 2    50   Input ~ 0
+Text GLabel 6400 3000 2    50   Input ~ 0
 USB_D+
-Wire Wire Line
-	6400 2100 6250 2100
 Wire Wire Line
 	1350 1450 1350 900 
 Connection ~ 950  2050
@@ -298,7 +296,7 @@ Wire Wire Line
 Connection ~ 5650 1150
 Wire Wire Line
 	5650 1150 5650 1800
-Text GLabel 6400 3000 2    50   Input ~ 0
+Text GLabel 6400 3100 2    50   Input ~ 0
 USB_D-
 Wire Wire Line
 	6400 3000 6250 3000
@@ -415,12 +413,120 @@ Connection ~ 4000 3000
 $Comp
 L custom_parts:CD4555BE U?
 U 1 1 5E5D1E6A
-P 8250 1800
-F 0 "U?" H 8250 2565 50  0000 C CNN
-F 1 "CD4555BE" H 8250 2474 50  0000 C CNN
-F 2 "" H 8200 2100 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/cd4555b.pdf" H 8200 2100 50  0001 C CNN
-	1    8250 1800
+P 10700 1500
+F 0 "U?" H 10700 2225 50  0000 C CNN
+F 1 "CD4555BE" H 10700 2134 50  0000 C CNN
+F 2 "" H 10650 1800 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/cd4555b.pdf" H 10650 1800 50  0001 C CNN
+	1    10700 1500
 	1    0    0    -1  
 $EndComp
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 5E5DFF2D
+P 9800 2100
+F 0 "Q?" H 9990 2146 50  0000 L CNN
+F 1 "2N3904" H 9990 2055 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10000 2025 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9800 2100 50  0001 L CNN
+	1    9800 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 1900 9900 1850
+$Comp
+L power:GND #PWR?
+U 1 1 5E5E6FF9
+P 9900 2350
+F 0 "#PWR?" H 9900 2100 50  0001 C CNN
+F 1 "GND" H 9905 2177 50  0000 C CNN
+F 2 "" H 9900 2350 50  0001 C CNN
+F 3 "" H 9900 2350 50  0001 C CNN
+	1    9900 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 2300 9900 2350
+$Comp
+L Device:R R?
+U 1 1 5E5E86DC
+P 9900 1650
+F 0 "R?" H 9970 1696 50  0000 L CNN
+F 1 "5k?" H 9970 1605 50  0000 L CNN
+F 2 "" V 9830 1650 50  0001 C CNN
+F 3 "~" H 9900 1650 50  0001 C CNN
+	1    9900 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 9900 1850
+Wire Wire Line
+	9900 1850 9900 1800
+Wire Wire Line
+	9900 1850 10300 1850
+Wire Wire Line
+	10300 1750 10150 1750
+Wire Wire Line
+	10150 1750 10150 1250
+Wire Wire Line
+	10150 1250 10300 1250
+Wire Wire Line
+	10150 1250 9400 1250
+Connection ~ 10150 1250
+Wire Wire Line
+	10300 1650 10250 1650
+Wire Wire Line
+	10250 1650 10250 1150
+Wire Wire Line
+	10250 1150 10300 1150
+Wire Wire Line
+	10250 1150 9400 1150
+Connection ~ 10250 1150
+Wire Wire Line
+	9900 1500 9900 1000
+Wire Wire Line
+	9900 1000 10300 1000
+$Comp
+L power:+5V #PWR?
+U 1 1 5E606532
+P 9900 900
+F 0 "#PWR?" H 9900 750 50  0001 C CNN
+F 1 "+5V" H 9915 1073 50  0000 C CNN
+F 2 "" H 9900 900 50  0001 C CNN
+F 3 "" H 9900 900 50  0001 C CNN
+	1    9900 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 900  9900 1000
+Connection ~ 9900 1000
+$Comp
+L Device:R R?
+U 1 1 5E608808
+P 9600 1650
+F 0 "R?" H 9670 1696 50  0000 L CNN
+F 1 "10k?" H 9670 1605 50  0000 L CNN
+F 2 "" V 9530 1650 50  0001 C CNN
+F 3 "~" H 9600 1650 50  0001 C CNN
+	1    9600 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1350 9600 1350
+Wire Wire Line
+	9600 1500 9600 1350
+Connection ~ 9600 1350
+Wire Wire Line
+	9600 1350 10300 1350
+Wire Wire Line
+	9600 1800 9600 2100
+Wire Notes Line
+	9400 650  11100 650 
+Wire Notes Line
+	11100 650  11100 2350
+Wire Notes Line
+	11100 2350 9400 2350
+Wire Notes Line
+	9400 2350 9400 650 
+Wire Wire Line
+	6400 3100 6250 3100
 $EndSCHEMATC
