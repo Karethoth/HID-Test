@@ -499,16 +499,16 @@ F 3 "~" H 4700 3800 50  0001 C CNN
 	1    4700 3800
 	1    0    0    -1  
 $EndComp
-Text GLabel 4650 4600 2    50   Input ~ 0
+Text GLabel 5000 4600 2    50   Input ~ 0
 Matrix_0b
-Text GLabel 4650 4700 2    50   Input ~ 0
+Text GLabel 5000 4700 2    50   Input ~ 0
 Matrix_1b
-Text GLabel 4650 4800 2    50   Input ~ 0
+Text GLabel 5000 4800 2    50   Input ~ 0
 Matrix_2b
 Wire Wire Line
-	4650 4700 4500 4700
+	5000 4700 4500 4700
 Wire Wire Line
-	4500 4800 4650 4800
+	4500 4800 5000 4800
 Wire Wire Line
 	7350 2200 6100 2200
 Connection ~ 6100 2200
@@ -552,7 +552,7 @@ Matrix_1b
 Text GLabel 5600 1050 0    50   Input ~ 0
 Matrix_0b
 Wire Wire Line
-	4650 4600 4500 4600
+	5000 4600 4500 4600
 Wire Wire Line
 	8600 1750 8600 1700
 $Comp
@@ -671,11 +671,11 @@ Text GLabel 8100 1100 0    50   Input ~ 0
 Matrix_4b
 Text GLabel 8100 1000 0    50   Input ~ 0
 Matrix_3b
-Text GLabel 4650 4900 2    50   Input ~ 0
+Text GLabel 5000 4900 2    50   Input ~ 0
 Matrix_3b
-Text GLabel 4650 5000 2    50   Input ~ 0
+Text GLabel 5000 5000 2    50   Input ~ 0
 Matrix_4b
-Text GLabel 4650 5100 2    50   Input ~ 0
+Text GLabel 5000 5100 2    50   Input ~ 0
 Matrix_5b
 Wire Wire Line
 	7350 2200 7350 900 
@@ -686,11 +686,11 @@ Wire Wire Line
 Wire Wire Line
 	9850 850  9850 2150
 Wire Wire Line
-	4500 4900 4650 4900
+	4500 4900 4900 4900
 Wire Wire Line
-	4650 5000 4500 5000
+	5000 5000 4800 5000
 Wire Wire Line
-	4500 5100 4650 5100
+	4500 5100 4700 5100
 Wire Wire Line
 	7300 1050 7400 1050
 Wire Wire Line
@@ -793,4 +793,93 @@ Text Notes 4500 2750 0    50   Italic 0
 TODO:\n- Protection
 Text Notes 7000 6650 0    50   ~ 0
 - Missing parts ordered
+$Comp
+L Connector_Generic:Conn_02x03_Counter_Clockwise J3
+U 1 1 5E8073C7
+P 1250 6350
+F 0 "J3" H 1300 6667 50  0000 C CNN
+F 1 "Prog" H 1300 6576 50  0000 C CNN
+F 2 "" H 1250 6350 50  0001 C CNN
+F 3 "~" H 1250 6350 50  0001 C CNN
+	1    1250 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E81F428
+P 1650 6100
+F 0 "#PWR?" H 1650 5950 50  0001 C CNN
+F 1 "+5V" H 1665 6273 50  0000 C CNN
+F 2 "" H 1650 6100 50  0001 C CNN
+F 3 "" H 1650 6100 50  0001 C CNN
+	1    1650 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E8258A8
+P 1650 6600
+F 0 "#PWR?" H 1650 6350 50  0001 C CNN
+F 1 "GND" H 1655 6427 50  0000 C CNN
+F 2 "" H 1650 6600 50  0001 C CNN
+F 3 "" H 1650 6600 50  0001 C CNN
+	1    1650 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 6450 1650 6450
+Wire Wire Line
+	1650 6450 1650 6600
+Wire Wire Line
+	1550 6250 1650 6250
+Wire Wire Line
+	1650 6250 1650 6100
+Text GLabel 1650 6350 2    50   Input ~ 0
+Prog_MOSI
+Wire Wire Line
+	1550 6350 1650 6350
+Text GLabel 950  6250 0    50   Input ~ 0
+Prog_MISO
+Text GLabel 950  6350 0    50   Input ~ 0
+Prog_SCK
+Text GLabel 950  6450 0    50   Input ~ 0
+Prog_RST
+Wire Wire Line
+	1050 6250 950  6250
+Wire Wire Line
+	950  6350 1050 6350
+Wire Wire Line
+	1050 6450 950  6450
+Wire Wire Line
+	2150 3000 2650 3000
+Connection ~ 2650 3000
+Text GLabel 2150 3000 0    50   Input ~ 0
+Prog_RST
+Text GLabel 5150 5400 2    50   Input ~ 0
+Prog_SCK
+Wire Wire Line
+	5150 5400 4700 5400
+Wire Wire Line
+	4700 5400 4700 5100
+Connection ~ 4700 5100
+Wire Wire Line
+	4700 5100 5000 5100
+Text GLabel 5150 5200 2    50   Input ~ 0
+Prog_MOSI
+Text GLabel 5150 5300 2    50   Input ~ 0
+Prog_MISO
+Wire Wire Line
+	4900 4900 4900 5200
+Wire Wire Line
+	4900 5200 5150 5200
+Connection ~ 4900 4900
+Wire Wire Line
+	4900 4900 5000 4900
+Wire Wire Line
+	5150 5300 4800 5300
+Wire Wire Line
+	4800 5300 4800 5000
+Connection ~ 4800 5000
+Wire Wire Line
+	4800 5000 4500 5000
 $EndSCHEMATC
