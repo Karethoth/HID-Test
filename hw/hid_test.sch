@@ -500,11 +500,11 @@ F 3 "~" H 3700 4050 50  0001 C CNN
 	1    3700 4050
 	1    0    0    -1  
 $EndComp
-Text GLabel 3700 6450 2    50   Input ~ 0
+Text GLabel 3550 6450 2    50   Input ~ 0
 Matrix_0b
-Text GLabel 3700 6550 2    50   Input ~ 0
+Text GLabel 3550 6550 2    50   Input ~ 0
 Matrix_1b
-Text GLabel 3700 6650 2    50   Input ~ 0
+Text GLabel 3550 6650 2    50   Input ~ 0
 Matrix_2b
 Connection ~ 5700 2400
 $Comp
@@ -655,18 +655,12 @@ Text GLabel 8750 1350 0    50   Input ~ 0
 Matrix_4b
 Text GLabel 8750 1250 0    50   Input ~ 0
 Matrix_3b
-Text GLabel 3700 6750 2    50   Input ~ 0
+Text GLabel 3750 6750 2    50   Input ~ 0
 Matrix_3b
-Text GLabel 3700 6850 2    50   Input ~ 0
+Text GLabel 3750 6850 2    50   Input ~ 0
 Matrix_4b
-Text GLabel 3700 6950 2    50   Input ~ 0
+Text GLabel 3750 6950 2    50   Input ~ 0
 Matrix_5b
-Wire Wire Line
-	3500 5150 4450 5150
-Wire Wire Line
-	4550 5250 4400 5250
-Wire Wire Line
-	3500 5350 4350 5350
 Wire Wire Line
 	6900 1250 7450 1250
 Wire Wire Line
@@ -676,13 +670,13 @@ Wire Wire Line
 Wire Wire Line
 	6900 1550 7450 1550
 Wire Wire Line
-	6900 1750 7250 1750
+	6900 1750 7450 1750
 Wire Wire Line
-	6900 1850 7250 1850
+	6900 1850 7450 1850
 Wire Wire Line
-	6900 1950 7250 1950
+	6900 1950 7450 1950
 Wire Wire Line
-	6900 2050 7250 2050
+	6900 2050 7450 2050
 Wire Wire Line
 	10350 1250 10450 1250
 Wire Wire Line
@@ -815,33 +809,10 @@ Wire Wire Line
 Connection ~ 1650 3250
 Text GLabel 1250 3250 0    50   Input ~ 0
 Prog_RST
-Text GLabel 4550 5350 2    50   Input ~ 0
-Prog_SCK
-Wire Wire Line
-	4550 4800 4350 4800
 Wire Wire Line
 	4350 4800 4350 5350
-Connection ~ 4350 5350
-Wire Wire Line
-	4350 5350 4550 5350
-Text GLabel 4550 5150 2    50   Input ~ 0
-Prog_MOSI
-Text GLabel 4550 5250 2    50   Input ~ 0
-Prog_MISO
-Wire Wire Line
-	4450 5150 4450 5000
-Wire Wire Line
-	4450 5000 4550 5000
-Connection ~ 4450 5150
-Wire Wire Line
-	4450 5150 4550 5150
-Wire Wire Line
-	4550 4900 4400 4900
 Wire Wire Line
 	4400 4900 4400 5250
-Connection ~ 4400 5250
-Wire Wire Line
-	4400 5250 3500 5250
 $Comp
 L custom_parts:ILI9163 J4
 U 1 1 5EDD5E5F
@@ -948,21 +919,19 @@ Wire Notes Line rgb(0, 194, 0)
 Text Notes 6750 2650 0    50   ~ 0
 Tested
 Wire Wire Line
-	3700 6450 3500 6450
+	3550 6450 3500 6450
 Wire Wire Line
-	3500 6550 3700 6550
+	3500 6550 3550 6550
 Wire Wire Line
-	3700 6650 3500 6650
+	3550 6650 3500 6650
 Wire Wire Line
-	3500 6750 3700 6750
+	3500 6750 3750 6750
 Wire Wire Line
-	3700 6850 3500 6850
+	3750 6850 3500 6850
 Wire Wire Line
-	3500 6950 3700 6950
-Text GLabel 3650 5050 2    50   Input ~ 0
+	3500 6950 3750 6950
+Text GLabel 4900 4650 2    50   Input ~ 0
 SPI_~SS
-Wire Wire Line
-	3650 5050 3500 5050
 Wire Notes Line rgb(0, 194, 0)
 	1300 1050 1300 2550
 Wire Notes Line rgb(0, 194, 0)
@@ -973,4 +942,71 @@ Wire Notes Line rgb(0, 194, 0)
 	1300 1050 2300 1050
 Text Notes 2000 2500 0    50   ~ 0
 Tested\n
+Text GLabel 7450 1750 2    50   Input ~ 0
+Matrix_Row_5
+Text GLabel 7450 1850 2    50   Input ~ 0
+Matrix_Row_6
+Text GLabel 7450 1950 2    50   Input ~ 0
+Matrix_Row_7
+Text GLabel 7450 2050 2    50   Input ~ 0
+Matrix_Row_8
+Text GLabel 3550 7050 2    50   Input ~ 0
+Matrix_O_0
+Text GLabel 3550 7150 2    50   Input ~ 0
+Matrix_O_1
+Connection ~ 4400 5250
+Connection ~ 4350 5350
+Wire Wire Line
+	4900 4900 4400 4900
+Wire Wire Line
+	4450 5150 4550 5150
+Connection ~ 4450 5150
+Wire Wire Line
+	4450 5000 4900 5000
+Wire Wire Line
+	4450 5150 4450 5000
+Text GLabel 4550 5250 2    50   Input ~ 0
+Prog_MISO
+Text GLabel 4550 5150 2    50   Input ~ 0
+Prog_MOSI
+Wire Wire Line
+	4350 5350 4550 5350
+Wire Wire Line
+	4900 4800 4350 4800
+Text GLabel 4550 5350 2    50   Input ~ 0
+Prog_SCK
+Wire Wire Line
+	4550 5250 4400 5250
+Wire Wire Line
+	3500 5150 4450 5150
+Wire Wire Line
+	3500 5250 4400 5250
+Wire Wire Line
+	3500 5350 4350 5350
+Text GLabel 4900 5000 2    50   Input ~ 0
+SPI_MOSI
+Text GLabel 4900 4900 2    50   Input ~ 0
+SPI_MISO
+Text GLabel 4900 4800 2    50   Input ~ 0
+SPI_SCK
+Wire Notes Line
+	4500 5050 4850 5050
+Text Notes 4550 4600 0    50   Italic 0
+TODO:\n- 3v3
+Wire Wire Line
+	3550 7050 3500 7050
+Wire Wire Line
+	3550 7150 3500 7150
+Wire Notes Line
+	4500 4400 4850 4400
+Wire Notes Line
+	4850 4400 4850 5050
+Wire Notes Line
+	4500 4400 4500 5050
+Wire Wire Line
+	4900 4650 4300 4650
+Wire Wire Line
+	4300 4650 4300 5050
+Wire Wire Line
+	4300 5050 3500 5050
 $EndSCHEMATC
