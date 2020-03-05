@@ -4,6 +4,10 @@ $CMP CD4555BE
 F https://www.ti.com/lit/ds/symlink/cd4555b.pdf
 $ENDCMP
 #
+$CMP ILI9163
+F https://www.rockbox.org/wiki/pub/Main/SonyNWZE370/ILI9163.pdf
+$ENDCMP
+#
 $CMP SN74HC148N
 F https://www.ti.com/lit/ds/symlink/sn74hc148.pdf
 $ENDCMP
