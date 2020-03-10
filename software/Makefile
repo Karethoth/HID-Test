@@ -12,7 +12,7 @@ CC = avr-g++ -Wall -Os -DF_CPU=$(CLOCK) -mmcu=$(DEVICE)
 all:	mainprog.hex
 
 flash:	all
-	$(AVRDUDE) -D -U flash:w:mainprog.hex:i
+	$(AVRDUDE) -U flash:w:mainprog.hex:i
 
 fuse:
 	$(AVRDUDE) $(FUSES)

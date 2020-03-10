@@ -1,6 +1,9 @@
-#include<avr/io.h>
-#include<avr/interrupt.h>
-#include<util/delay.h>
+#include <avr/io.h>
+#include <avr/interrupt.h>
+#include <util/delay.h>
+
+#include "libs/ILI9163_driver/ILI9163.h"
+#include "libs/ILI9163_driver/font_screen_ascii_5x8v2_hor.h"
 
 
 #define REG_TO_INT(p) (int)&p
@@ -22,57 +25,54 @@ enum PinDir {
 };
 
 
-template<int T_Port, int T_Pin>
+template<int T_DDR, int T_PORT, int T_PIN, int T_PD>
 struct IO_Pin
 {
   static constexpr auto ddr()
   {
-    switch(T_Port)
-    {
-      case REG_TO_INT(DDRA):
-        return (volatile uint8_t*)DDRA;
-
-      case REG_TO_INT(DDRB):
-        return (volatile uint8_t*)DDRB;
-
-      case REG_TO_INT(DDRC):
-        return (volatile uint8_t*)DDRC;
-
-      case REG_TO_INT(DDRD):
-      default:
-        return (volatile uint8_t*)DDRD;
-    }
-    return (volatile uint8_t*)DDRD;
+    return (volatile uint8_t*)T_DDR;
   }
 
   static constexpr auto port()
   {
-    return (volatile uint8_t*)T_Port;
+    return (volatile uint8_t*)T_PORT;
   }
 
   static constexpr auto pin()
   {
-    return T_Pin;
+    return (volatile uint8_t*)T_PIN;
   }
 
-  static void setup(PinDir dir)
+  static constexpr auto pd()
   {
-    if (dir == PIN_IN) {
-        *ddr() &= ~(1<<pin());
+    return T_PD;
+  }
+
+  static void setup(PinDir new_dir)
+  {
+    if (new_dir == PIN_IN) {
+        *ddr() &= ~(1<<pd());
     }
     else {
-        *ddr() |= (1<<pin());
+        *ddr() |= (1<<pd());
     }
   }
 
   static void set()
   {
-    *port() |= (1<<pin());
+    *port() |= (1 << T_PD);
   }
 
   static void unset()
   {
-    *port() &= ~(1<<pin());
+    *port() &= ~(1 << T_PD);
+  }
+
+  volatile static bool read()
+  {
+    volatile uint8_t tmp = (*pin());
+    return (tmp >> pd()) & 1;
+    return tmp & pd();
   }
 };
 
@@ -99,6 +99,11 @@ struct Keypad
 
     FeedbackPin1::setup(PIN_IN);
     FeedbackPin2::setup(PIN_IN);
+
+    FeedbackPin1::set();
+    FeedbackPin2::set();
+
+    set_row(0);
   }
 
   void set_row(uint8_t row)
@@ -144,15 +149,25 @@ struct Keypad
     set_row(next_row);
   }
 
+  uint8_t read_row()
+  {
+    volatile uint8_t row = 0x00;
+    row |= FeedbackPin1::read();
+    row |= FeedbackPin2::read() << 1;
+    volatile uint8_t new_row = PINC & 0b111111;
+    return row;
+    return new_row;
+  }
+
 };
 
 
-using DecoderPin1 = IO_Pin<REG_TO_INT(PORTD), PD2>;
-using DecoderPin2 = IO_Pin<REG_TO_INT(PORTD), PD3>;
-using DecoderPin3 = IO_Pin<REG_TO_INT(PORTD), PD4>;
+using DecoderPin1 = IO_Pin<REG_TO_INT(DDRD), REG_TO_INT(PORTD), REG_TO_INT(PIND), PD0>;
+using DecoderPin2 = IO_Pin<REG_TO_INT(DDRD), REG_TO_INT(PORTD), REG_TO_INT(PIND), PD1>;
+using DecoderPin3 = IO_Pin<REG_TO_INT(DDRD), REG_TO_INT(PORTD), REG_TO_INT(PIND), PD2>;
 
-using FeedbackPin1 = IO_Pin<REG_TO_INT(PORTD), PD5>;
-using FeedbackPin2 = IO_Pin<REG_TO_INT(PORTD), PD6>;
+using FeedbackPin1 = IO_Pin<REG_TO_INT(DDRC), REG_TO_INT(PORTC), REG_TO_INT(PINC), PC0>;
+using FeedbackPin2 = IO_Pin<REG_TO_INT(DDRC), REG_TO_INT(PORTC), REG_TO_INT(PINC), PC1>;
 
 Keypad<
   DecoderPin1,
@@ -169,23 +184,50 @@ void init()
 {
   DDRA = 0x00;
   DDRB = 0xFF;
-  DDRC = 0xFF;
+  DDRC = 0x00;
   DDRD = 0xFF;
 
+  PORTA = 0x00;
   PORTB = 0x00;
-  PORTC = 0x00;
+  PORTC = 0xFF;
   PORTD = 0x00;
 
   keypad.init();
+
+  LCD_init();
+  LCD_Orientation(LCD_ROT_90);
+  LCD_FillScreen( LCD_RGB(255,0,0) );
 }
 
 int main()
 {
   init();
+  volatile uint8_t last_row = 0;
+
   for(;;) {
-    sleep_ms(1);
+    sleep_ms(10);
+    volatile uint8_t new_row = keypad.read_row();
+
+    uint8_t active_row = (keypad.current_row) % 3;
+
+    if(new_row & 0b01) {
+      LCD_PutsF("0", 128 - 3*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLUE, LCD_WHITE, &font_5_8);
+    }
+    else
+    {
+      LCD_PutsF("1", 128 - 3*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLUE, LCD_WHITE, &font_5_8);
+    }
+
+    if(new_row & 0b10) {
+      LCD_PutsF("0", 128 - 2*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLUE, LCD_WHITE, &font_5_8);
+    }
+    else
+    {
+      LCD_PutsF("1", 128 - 2*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLUE, LCD_WHITE, &font_5_8);
+    }
+
+    sleep_ms(10);
     keypad.next_row();
-    sleep_ms(1);
   }
 }
 
