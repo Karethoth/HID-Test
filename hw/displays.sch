@@ -310,7 +310,7 @@ Wire Wire Line
 Connection ~ 1750 1850
 Wire Wire Line
 	1750 1850 1800 1850
-Text GLabel 1950 2050 2    50   Input ~ 0
+Text GLabel 1950 2050 2    50   Output ~ 0
 SPI_SCK_3v3
 Wire Wire Line
 	1750 2050 1950 2050
@@ -426,11 +426,11 @@ Wire Wire Line
 	1750 1400 1800 1400
 Wire Wire Line
 	1750 2500 1950 2500
-Text GLabel 1950 2500 2    50   Input ~ 0
+Text GLabel 1950 2500 2    50   Output ~ 0
 SPI_SDA_3v3
 Wire Wire Line
 	1750 1600 1950 1600
-Text GLabel 1950 1600 2    50   Input ~ 0
+Text GLabel 1950 1600 2    50   Output ~ 0
 SPI_~SS~_3v3
 $Comp
 L Device:R R?
@@ -489,7 +489,7 @@ Wire Wire Line
 	1750 3150 1800 3150
 Wire Wire Line
 	1750 3350 1950 3350
-Text GLabel 1950 3350 2    50   Input ~ 0
+Text GLabel 1950 3350 2    50   Output ~ 0
 DISPLAY_~RST~_3v3
 $Comp
 L Device:R R?
@@ -719,13 +719,13 @@ Wire Wire Line
 	1800 4800 1850 4800
 Wire Wire Line
 	1800 5000 2000 5000
-Text GLabel 2000 3800 2    50   Input ~ 0
+Text GLabel 2000 3800 2    50   Output ~ 0
 DISPLAY_SEL_1_3v3
-Text GLabel 2000 4200 2    50   Input ~ 0
+Text GLabel 2000 4200 2    50   Output ~ 0
 DISPLAY_SEL_2_3v3
-Text GLabel 2000 4600 2    50   Input ~ 0
+Text GLabel 2000 4600 2    50   Output ~ 0
 DISPLAY_SEL_3_3v3
-Text GLabel 2000 5000 2    50   Input ~ 0
+Text GLabel 2000 5000 2    50   Output ~ 0
 DISPLAY_SEL_4_3v3
 Wire Wire Line
 	4750 2300 5450 2300

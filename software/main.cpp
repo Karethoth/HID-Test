@@ -72,7 +72,6 @@ struct IO_Pin
   {
     volatile uint8_t tmp = (*pin());
     return (tmp >> pd()) & 1;
-    return tmp & pd();
   }
 };
 
@@ -166,8 +165,8 @@ using DecoderPin1 = IO_Pin<REG_TO_INT(DDRD), REG_TO_INT(PORTD), REG_TO_INT(PIND)
 using DecoderPin2 = IO_Pin<REG_TO_INT(DDRD), REG_TO_INT(PORTD), REG_TO_INT(PIND), PD1>;
 using DecoderPin3 = IO_Pin<REG_TO_INT(DDRD), REG_TO_INT(PORTD), REG_TO_INT(PIND), PD2>;
 
-using FeedbackPin1 = IO_Pin<REG_TO_INT(DDRC), REG_TO_INT(PORTC), REG_TO_INT(PINC), PC0>;
-using FeedbackPin2 = IO_Pin<REG_TO_INT(DDRC), REG_TO_INT(PORTC), REG_TO_INT(PINC), PC1>;
+using FeedbackPin1 = IO_Pin<REG_TO_INT(DDRD), REG_TO_INT(PORTD), REG_TO_INT(PIND), PD3>;
+using FeedbackPin2 = IO_Pin<REG_TO_INT(DDRD), REG_TO_INT(PORTD), REG_TO_INT(PIND), PD4>;
 
 Keypad<
   DecoderPin1,
@@ -211,19 +210,19 @@ int main()
     uint8_t active_row = (keypad.current_row) % 3;
 
     if(new_row & 0b01) {
-      LCD_PutsF("0", 128 - 3*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLUE, LCD_WHITE, &font_5_8);
+      LCD_PutsF("0", 128 - 3*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLACK, LCD_WHITE, &font_5_8);
     }
     else
     {
-      LCD_PutsF("1", 128 - 3*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLUE, LCD_WHITE, &font_5_8);
+      LCD_PutsF("1", 128 - 3*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLACK, LCD_WHITE, &font_5_8);
     }
 
     if(new_row & 0b10) {
-      LCD_PutsF("0", 128 - 2*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLUE, LCD_WHITE, &font_5_8);
+      LCD_PutsF("0", 128 - 2*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLACK, LCD_WHITE, &font_5_8);
     }
     else
     {
-      LCD_PutsF("1", 128 - 2*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLUE, LCD_WHITE, &font_5_8);
+      LCD_PutsF("1", 128 - 2*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLACK, LCD_WHITE, &font_5_8);
     }
 
     sleep_ms(10);
