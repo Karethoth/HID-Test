@@ -899,42 +899,10 @@ Wire Wire Line
 	3500 6550 3850 6550
 Wire Wire Line
 	3500 6650 3850 6650
-Text GLabel 4300 6750 2    50   Input ~ 0
-Matrix_~press~_A
-Text GLabel 4300 6900 2    50   Input ~ 0
-Matrix_~press~_B
-Text GLabel 4300 7050 2    50   Input ~ 0
-Matrix_~press~_C
-Text GLabel 4300 7200 2    50   Input ~ 0
-Matrix_~press~_D
-Text GLabel 4300 7350 2    50   Input ~ 0
-Matrix_~press~_E
+Text GLabel 3850 6750 2    50   Input ~ 0
+Matrix_press_A
 Wire Wire Line
-	3500 6750 4300 6750
-Wire Wire Line
-	3500 6850 4200 6850
-Wire Wire Line
-	4200 6850 4200 6900
-Wire Wire Line
-	4200 6900 4300 6900
-Wire Wire Line
-	4300 7050 4150 7050
-Wire Wire Line
-	4150 7050 4150 6950
-Wire Wire Line
-	4150 6950 3500 6950
-Wire Wire Line
-	3500 7050 4100 7050
-Wire Wire Line
-	4100 7050 4100 7200
-Wire Wire Line
-	4100 7200 4300 7200
-Wire Wire Line
-	4300 7350 4050 7350
-Wire Wire Line
-	4050 7350 4050 7150
-Wire Wire Line
-	4050 7150 3500 7150
+	3500 6750 3850 6750
 $Comp
 L Connector_Generic:Conn_02x08_Counter_Clockwise J?
 U 1 1 5FF228B2
@@ -978,47 +946,13 @@ Wire Wire Line
 	8000 4550 8050 4550
 Wire Wire Line
 	7600 4650 8000 4650
-Text GLabel 9350 3850 2    50   Output ~ 0
-Matrix_~press~_A
-Text GLabel 9350 4000 2    50   Output ~ 0
-Matrix_~press~_B
-Text GLabel 9350 4150 2    50   Output ~ 0
-Matrix_~press~_C
-Text GLabel 9350 4300 2    50   Output ~ 0
-Matrix_~press~_D
-Text GLabel 9350 4450 2    50   Output ~ 0
-Matrix_~press~_E
+Text GLabel 8900 3950 2    50   Output ~ 0
+Matrix_press_A
 Wire Wire Line
 	8550 4450 8850 4450
 Wire Wire Line
 	8850 4450 8850 4550
 Connection ~ 8850 4550
-Wire Wire Line
-	9350 4150 8550 4150
-Wire Wire Line
-	8550 4250 9250 4250
-Wire Wire Line
-	9250 4250 9250 4300
-Wire Wire Line
-	9250 4300 9350 4300
-Wire Wire Line
-	8550 4350 9100 4350
-Wire Wire Line
-	9100 4350 9100 4450
-Wire Wire Line
-	9100 4450 9350 4450
-Wire Wire Line
-	9350 4000 9250 4000
-Wire Wire Line
-	9250 4000 9250 4050
-Wire Wire Line
-	9250 4050 8550 4050
-Wire Wire Line
-	9350 3850 9100 3850
-Wire Wire Line
-	9100 3850 9100 3950
-Wire Wire Line
-	9100 3950 8550 3950
 Text GLabel 6550 1000 2    50   Input ~ 0
 SPI_~SS~
 Text GLabel 6550 1250 2    50   Input ~ 0
@@ -1041,4 +975,38 @@ U 5F396FD6
 F0 "Displays" 50
 F1 "displays.sch" 50
 $EndSheet
+Wire Wire Line
+	8550 3950 8900 3950
+Text GLabel 8900 4050 2    50   Output ~ 0
+Matrix_press_B
+Text GLabel 8900 4150 2    50   Output ~ 0
+Matrix_press_C
+Text GLabel 8900 4250 2    50   Output ~ 0
+Matrix_press_D
+Text GLabel 8900 4350 2    50   Output ~ 0
+Matrix_press_E
+Wire Wire Line
+	8550 4050 8900 4050
+Wire Wire Line
+	8550 4150 8900 4150
+Wire Wire Line
+	8550 4250 8900 4250
+Wire Wire Line
+	8550 4350 8900 4350
+Text GLabel 3850 6850 2    50   Input ~ 0
+Matrix_press_B
+Text GLabel 3850 6950 2    50   Input ~ 0
+Matrix_press_C
+Text GLabel 3850 7050 2    50   Input ~ 0
+Matrix_press_D
+Text GLabel 3850 7150 2    50   Input ~ 0
+Matrix_press_E
+Wire Wire Line
+	3850 6850 3500 6850
+Wire Wire Line
+	3500 6950 3850 6950
+Wire Wire Line
+	3850 7050 3500 7050
+Wire Wire Line
+	3500 7150 3850 7150
 $EndSCHEMATC

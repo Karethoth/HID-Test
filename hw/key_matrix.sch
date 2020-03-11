@@ -602,77 +602,6 @@ Connection ~ 6100 2100
 Wire Wire Line
 	6650 2100 6650 1200
 Connection ~ 6650 2100
-Text GLabel 5650 6700 2    50   Output ~ 0
-Matrix_~press~_A
-Wire Wire Line
-	5550 7150 5550 7250
-$Comp
-L Transistor_BJT:2N3904 Q?
-U 1 1 5FAD18E7
-P 5450 6950
-AR Path="/5FAD18E7" Ref="Q?"  Part="1" 
-AR Path="/5EE5B30C/5FAD18E7" Ref="Q?"  Part="1" 
-AR Path="/5FA6AA33/5FAD18E7" Ref="Q?"  Part="1" 
-F 0 "Q?" H 5640 6996 50  0000 L CNN
-F 1 "2N3904" H 5640 6905 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5650 6875 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5450 6950 50  0001 L CNN
-	1    5450 6950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5FAD18ED
-P 5100 6950
-F 0 "R?" V 4893 6950 50  0000 C CNN
-F 1 "4.7k" V 4984 6950 50  0000 C CNN
-F 2 "" V 5030 6950 50  0001 C CNN
-F 3 "~" H 5100 6950 50  0001 C CNN
-	1    5100 6950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FAD18F4
-P 5550 7250
-F 0 "#PWR?" H 5550 7000 50  0001 C CNN
-F 1 "GND" H 5555 7077 50  0000 C CNN
-F 2 "" H 5550 7250 50  0001 C CNN
-F 3 "" H 5550 7250 50  0001 C CNN
-	1    5550 7250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5FAD18FA
-P 5550 6500
-F 0 "R?" H 5620 6546 50  0000 L CNN
-F 1 "10k" H 5620 6455 50  0000 L CNN
-F 2 "" V 5480 6500 50  0001 C CNN
-F 3 "~" H 5550 6500 50  0001 C CNN
-	1    5550 6500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 6700 5550 6750
-Wire Wire Line
-	5550 6700 5650 6700
-$Comp
-L power:+5V #PWR?
-U 1 1 5FAD1902
-P 5550 6300
-F 0 "#PWR?" H 5550 6150 50  0001 C CNN
-F 1 "+5V" H 5565 6473 50  0000 C CNN
-F 2 "" H 5550 6300 50  0001 C CNN
-F 3 "" H 5550 6300 50  0001 C CNN
-	1    5550 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 6300 5550 6350
-Wire Wire Line
-	5550 6650 5550 6700
-Connection ~ 5550 6700
 Text GLabel 6100 4950 3    50   BiDi ~ 0
 Switch_Matrix_A
 Wire Wire Line
@@ -681,80 +610,29 @@ Text GLabel 6650 4950 3    50   BiDi ~ 0
 Switch_Matrix_B
 Wire Wire Line
 	6650 4650 6650 4950
-Text GLabel 4950 6950 0    50   Input ~ 0
-Switch_Matrix_A
-Text GLabel 10550 1450 2    50   Output ~ 0
-Matrix_~press~_B
-Wire Wire Line
-	10450 1900 10450 2000
-$Comp
-L Transistor_BJT:2N3904 Q?
-U 1 1 5FB03210
-P 10350 1700
-AR Path="/5FB03210" Ref="Q?"  Part="1" 
-AR Path="/5EE5B30C/5FB03210" Ref="Q?"  Part="1" 
-AR Path="/5FA6AA33/5FB03210" Ref="Q?"  Part="1" 
-F 0 "Q?" H 10540 1746 50  0000 L CNN
-F 1 "2N3904" H 10540 1655 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10550 1625 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 10350 1700 50  0001 L CNN
-	1    10350 1700
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R?
 U 1 1 5FB03216
-P 10000 1700
-F 0 "R?" V 9793 1700 50  0000 C CNN
-F 1 "4.7k" V 9884 1700 50  0000 C CNN
-F 2 "" V 9930 1700 50  0001 C CNN
-F 3 "~" H 10000 1700 50  0001 C CNN
-	1    10000 1700
-	0    1    1    0   
+P 9950 2650
+F 0 "R?" H 9850 2650 50  0000 C CNN
+F 1 "4.7k" H 10100 2650 50  0000 C CNN
+F 2 "" V 9880 2650 50  0001 C CNN
+F 3 "~" H 9950 2650 50  0001 C CNN
+	1    9950 2650
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FB0321C
-P 10450 2000
-F 0 "#PWR?" H 10450 1750 50  0001 C CNN
-F 1 "GND" H 10455 1827 50  0000 C CNN
-F 2 "" H 10450 2000 50  0001 C CNN
-F 3 "" H 10450 2000 50  0001 C CNN
-	1    10450 2000
+P 9950 2800
+F 0 "#PWR?" H 9950 2550 50  0001 C CNN
+F 1 "GND" H 9955 2627 50  0000 C CNN
+F 2 "" H 9950 2800 50  0001 C CNN
+F 3 "" H 9950 2800 50  0001 C CNN
+	1    9950 2800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5FB03222
-P 10450 1250
-F 0 "R?" H 10520 1296 50  0000 L CNN
-F 1 "10k" H 10520 1205 50  0000 L CNN
-F 2 "" V 10380 1250 50  0001 C CNN
-F 3 "~" H 10450 1250 50  0001 C CNN
-	1    10450 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10450 1450 10450 1500
-Wire Wire Line
-	10450 1450 10550 1450
-$Comp
-L power:+5V #PWR?
-U 1 1 5FB0322A
-P 10450 1050
-F 0 "#PWR?" H 10450 900 50  0001 C CNN
-F 1 "+5V" H 10465 1223 50  0000 C CNN
-F 2 "" H 10450 1050 50  0001 C CNN
-F 3 "" H 10450 1050 50  0001 C CNN
-	1    10450 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10450 1050 10450 1100
-Wire Wire Line
-	10450 1400 10450 1450
-Connection ~ 10450 1450
-Text GLabel 9850 1700 0    50   Input ~ 0
+Text GLabel 9800 2400 0    50   Input ~ 0
 Switch_Matrix_B
 Text GLabel 3350 4950 3    50   BiDi ~ 0
 Switch_Matrix_C
@@ -1053,79 +931,6 @@ Connection ~ 6250 1400
 Connection ~ 6250 2250
 Connection ~ 6250 3100
 Connection ~ 6250 3950
-Text GLabel 10550 2900 2    50   Output ~ 0
-Matrix_~press~_C
-Wire Wire Line
-	10450 3350 10450 3450
-$Comp
-L Transistor_BJT:2N3904 Q?
-U 1 1 5FCF0D0F
-P 10350 3150
-AR Path="/5FCF0D0F" Ref="Q?"  Part="1" 
-AR Path="/5EE5B30C/5FCF0D0F" Ref="Q?"  Part="1" 
-AR Path="/5FA6AA33/5FCF0D0F" Ref="Q?"  Part="1" 
-F 0 "Q?" H 10540 3196 50  0000 L CNN
-F 1 "2N3904" H 10540 3105 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10550 3075 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 10350 3150 50  0001 L CNN
-	1    10350 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5FCF0D15
-P 10000 3150
-F 0 "R?" V 9793 3150 50  0000 C CNN
-F 1 "4.7k" V 9884 3150 50  0000 C CNN
-F 2 "" V 9930 3150 50  0001 C CNN
-F 3 "~" H 10000 3150 50  0001 C CNN
-	1    10000 3150
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FCF0D1B
-P 10450 3450
-F 0 "#PWR?" H 10450 3200 50  0001 C CNN
-F 1 "GND" H 10455 3277 50  0000 C CNN
-F 2 "" H 10450 3450 50  0001 C CNN
-F 3 "" H 10450 3450 50  0001 C CNN
-	1    10450 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5FCF0D21
-P 10450 2700
-F 0 "R?" H 10520 2746 50  0000 L CNN
-F 1 "10k" H 10520 2655 50  0000 L CNN
-F 2 "" V 10380 2700 50  0001 C CNN
-F 3 "~" H 10450 2700 50  0001 C CNN
-	1    10450 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10450 2900 10450 2950
-Wire Wire Line
-	10450 2900 10550 2900
-$Comp
-L power:+5V #PWR?
-U 1 1 5FCF0D29
-P 10450 2500
-F 0 "#PWR?" H 10450 2350 50  0001 C CNN
-F 1 "+5V" H 10465 2673 50  0000 C CNN
-F 2 "" H 10450 2500 50  0001 C CNN
-F 3 "" H 10450 2500 50  0001 C CNN
-	1    10450 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10450 2500 10450 2550
-Wire Wire Line
-	10450 2850 10450 2900
-Connection ~ 10450 2900
-Text GLabel 9850 3150 0    50   Input ~ 0
-Switch_Matrix_C
 Text GLabel 3900 4950 3    50   BiDi ~ 0
 Switch_Matrix_D
 Connection ~ 3900 4650
@@ -1417,79 +1222,6 @@ Connection ~ 6800 1400
 Connection ~ 6800 2250
 Connection ~ 6800 3100
 Connection ~ 6800 3950
-Text GLabel 10550 4350 2    50   Output ~ 0
-Matrix_~press~_D
-Wire Wire Line
-	10450 4800 10450 4900
-$Comp
-L Transistor_BJT:2N3904 Q?
-U 1 1 5FDAC9C8
-P 10350 4600
-AR Path="/5FDAC9C8" Ref="Q?"  Part="1" 
-AR Path="/5EE5B30C/5FDAC9C8" Ref="Q?"  Part="1" 
-AR Path="/5FA6AA33/5FDAC9C8" Ref="Q?"  Part="1" 
-F 0 "Q?" H 10540 4646 50  0000 L CNN
-F 1 "2N3904" H 10540 4555 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10550 4525 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 10350 4600 50  0001 L CNN
-	1    10350 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5FDAC9CE
-P 10000 4600
-F 0 "R?" V 9793 4600 50  0000 C CNN
-F 1 "4.7k" V 9884 4600 50  0000 C CNN
-F 2 "" V 9930 4600 50  0001 C CNN
-F 3 "~" H 10000 4600 50  0001 C CNN
-	1    10000 4600
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FDAC9D4
-P 10450 4900
-F 0 "#PWR?" H 10450 4650 50  0001 C CNN
-F 1 "GND" H 10455 4727 50  0000 C CNN
-F 2 "" H 10450 4900 50  0001 C CNN
-F 3 "" H 10450 4900 50  0001 C CNN
-	1    10450 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5FDAC9DA
-P 10450 4150
-F 0 "R?" H 10520 4196 50  0000 L CNN
-F 1 "10k" H 10520 4105 50  0000 L CNN
-F 2 "" V 10380 4150 50  0001 C CNN
-F 3 "~" H 10450 4150 50  0001 C CNN
-	1    10450 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10450 4350 10450 4400
-Wire Wire Line
-	10450 4350 10550 4350
-$Comp
-L power:+5V #PWR?
-U 1 1 5FDAC9E2
-P 10450 3950
-F 0 "#PWR?" H 10450 3800 50  0001 C CNN
-F 1 "+5V" H 10465 4123 50  0000 C CNN
-F 2 "" H 10450 3950 50  0001 C CNN
-F 3 "" H 10450 3950 50  0001 C CNN
-	1    10450 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10450 3950 10450 4000
-Wire Wire Line
-	10450 4300 10450 4350
-Connection ~ 10450 4350
-Text GLabel 9850 4600 0    50   Input ~ 0
-Switch_Matrix_D
 Connection ~ 2950 1400
 Connection ~ 2950 2250
 Connection ~ 2950 3100
@@ -1505,79 +1237,6 @@ F 3 "~" H 2050 6750 50  0001 C CNN
 	1    2050 6750
 	1    0    0    -1  
 $EndComp
-Text GLabel 10550 5750 2    50   Output ~ 0
-Matrix_~press~_E
-Wire Wire Line
-	10450 6200 10450 6300
-$Comp
-L Transistor_BJT:2N3904 Q?
-U 1 1 6008B932
-P 10350 6000
-AR Path="/6008B932" Ref="Q?"  Part="1" 
-AR Path="/5EE5B30C/6008B932" Ref="Q?"  Part="1" 
-AR Path="/5FA6AA33/6008B932" Ref="Q?"  Part="1" 
-F 0 "Q?" H 10540 6046 50  0000 L CNN
-F 1 "2N3904" H 10540 5955 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10550 5925 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 10350 6000 50  0001 L CNN
-	1    10350 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6008B938
-P 10000 6000
-F 0 "R?" V 9793 6000 50  0000 C CNN
-F 1 "4.7k" V 9884 6000 50  0000 C CNN
-F 2 "" V 9930 6000 50  0001 C CNN
-F 3 "~" H 10000 6000 50  0001 C CNN
-	1    10000 6000
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6008B93E
-P 10450 6300
-F 0 "#PWR?" H 10450 6050 50  0001 C CNN
-F 1 "GND" H 10455 6127 50  0000 C CNN
-F 2 "" H 10450 6300 50  0001 C CNN
-F 3 "" H 10450 6300 50  0001 C CNN
-	1    10450 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6008B944
-P 10450 5550
-F 0 "R?" H 10520 5596 50  0000 L CNN
-F 1 "10k" H 10520 5505 50  0000 L CNN
-F 2 "" V 10380 5550 50  0001 C CNN
-F 3 "~" H 10450 5550 50  0001 C CNN
-	1    10450 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10450 5750 10450 5800
-Wire Wire Line
-	10450 5750 10550 5750
-$Comp
-L power:+5V #PWR?
-U 1 1 6008B94C
-P 10450 5350
-F 0 "#PWR?" H 10450 5200 50  0001 C CNN
-F 1 "+5V" H 10465 5523 50  0000 C CNN
-F 2 "" H 10450 5350 50  0001 C CNN
-F 3 "" H 10450 5350 50  0001 C CNN
-	1    10450 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10450 5350 10450 5400
-Wire Wire Line
-	10450 5700 10450 5750
-Connection ~ 10450 5750
-Text GLabel 9850 6000 0    50   Input ~ 0
-Switch_Matrix_C
 Text GLabel 4450 4950 3    50   BiDi ~ 0
 Switch_Matrix_E
 Connection ~ 4450 4650
@@ -1940,40 +1599,165 @@ Wire Wire Line
 	1850 6650 1700 6650
 Wire Wire Line
 	1700 6550 1850 6550
-Text GLabel 2850 6450 2    50   Input ~ 0
-Matrix_~press~_A
-Text GLabel 2850 6600 2    50   Input ~ 0
-Matrix_~press~_B
-Text GLabel 2850 6750 2    50   Input ~ 0
-Matrix_~press~_C
-Text GLabel 2850 6900 2    50   Input ~ 0
-Matrix_~press~_D
-Text GLabel 2850 7050 2    50   Input ~ 0
-Matrix_~press~_E
+Text GLabel 2600 6550 2    50   Input ~ 0
+Matrix_press_A
 Wire Wire Line
-	2350 6750 2850 6750
+	2350 6750 2600 6750
 Wire Wire Line
-	2850 6600 2800 6600
+	9950 2400 10100 2400
 Wire Wire Line
-	2800 6600 2800 6650
+	9800 2400 9950 2400
 Wire Wire Line
-	2800 6650 2350 6650
+	9950 2400 9950 2500
+Connection ~ 9950 2400
+$Comp
+L Device:R R?
+U 1 1 6043FD5A
+P 9950 1900
+F 0 "R?" H 9850 1900 50  0000 C CNN
+F 1 "4.7k" H 10100 1900 50  0000 C CNN
+F 2 "" V 9880 1900 50  0001 C CNN
+F 3 "~" H 9950 1900 50  0001 C CNN
+	1    9950 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6043FD60
+P 9950 2050
+F 0 "#PWR?" H 9950 1800 50  0001 C CNN
+F 1 "GND" H 9955 1877 50  0000 C CNN
+F 2 "" H 9950 2050 50  0001 C CNN
+F 3 "" H 9950 2050 50  0001 C CNN
+	1    9950 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 9800 1650 0    50   Input ~ 0
+Switch_Matrix_A
 Wire Wire Line
-	2850 6450 2750 6450
+	9950 1650 10100 1650
 Wire Wire Line
-	2750 6450 2750 6550
+	9800 1650 9950 1650
 Wire Wire Line
-	2750 6550 2350 6550
+	9950 1650 9950 1750
+Connection ~ 9950 1650
+$Comp
+L Device:R R?
+U 1 1 60448737
+P 9950 3400
+F 0 "R?" H 9850 3400 50  0000 C CNN
+F 1 "4.7k" H 10100 3400 50  0000 C CNN
+F 2 "" V 9880 3400 50  0001 C CNN
+F 3 "~" H 9950 3400 50  0001 C CNN
+	1    9950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6044873D
+P 9950 3550
+F 0 "#PWR?" H 9950 3300 50  0001 C CNN
+F 1 "GND" H 9955 3377 50  0000 C CNN
+F 2 "" H 9950 3550 50  0001 C CNN
+F 3 "" H 9950 3550 50  0001 C CNN
+	1    9950 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 9800 3150 0    50   Input ~ 0
+Switch_Matrix_C
 Wire Wire Line
-	2850 6900 2800 6900
+	9950 3150 10100 3150
 Wire Wire Line
-	2800 6900 2800 6850
+	9800 3150 9950 3150
 Wire Wire Line
-	2800 6850 2350 6850
+	9950 3150 9950 3250
+Connection ~ 9950 3150
+$Comp
+L Device:R R?
+U 1 1 604608AC
+P 9950 4150
+F 0 "R?" H 9850 4150 50  0000 C CNN
+F 1 "4.7k" H 10100 4150 50  0000 C CNN
+F 2 "" V 9880 4150 50  0001 C CNN
+F 3 "~" H 9950 4150 50  0001 C CNN
+	1    9950 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 604608B2
+P 9950 4300
+F 0 "#PWR?" H 9950 4050 50  0001 C CNN
+F 1 "GND" H 9955 4127 50  0000 C CNN
+F 2 "" H 9950 4300 50  0001 C CNN
+F 3 "" H 9950 4300 50  0001 C CNN
+	1    9950 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 9800 3900 0    50   Input ~ 0
+Switch_Matrix_D
 Wire Wire Line
-	2350 6950 2750 6950
+	9950 3900 10100 3900
 Wire Wire Line
-	2750 6950 2750 7050
+	9800 3900 9950 3900
 Wire Wire Line
-	2750 7050 2850 7050
+	9950 3900 9950 4000
+Connection ~ 9950 3900
+Text GLabel 10100 4650 2    50   Output ~ 0
+Matrix_press_E
+$Comp
+L Device:R R?
+U 1 1 604696DD
+P 9950 4900
+F 0 "R?" H 9850 4900 50  0000 C CNN
+F 1 "4.7k" H 10100 4900 50  0000 C CNN
+F 2 "" V 9880 4900 50  0001 C CNN
+F 3 "~" H 9950 4900 50  0001 C CNN
+	1    9950 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 604696E3
+P 9950 5050
+F 0 "#PWR?" H 9950 4800 50  0001 C CNN
+F 1 "GND" H 9955 4877 50  0000 C CNN
+F 2 "" H 9950 5050 50  0001 C CNN
+F 3 "" H 9950 5050 50  0001 C CNN
+	1    9950 5050
+	1    0    0    -1  
+$EndComp
+Text GLabel 9800 4650 0    50   Input ~ 0
+Switch_Matrix_E
+Wire Wire Line
+	9950 4650 10100 4650
+Wire Wire Line
+	9800 4650 9950 4650
+Wire Wire Line
+	9950 4650 9950 4750
+Connection ~ 9950 4650
+Text GLabel 10100 3900 2    50   Output ~ 0
+Matrix_press_D
+Text GLabel 10100 3150 2    50   Output ~ 0
+Matrix_press_C
+Text GLabel 10100 2400 2    50   Output ~ 0
+Matrix_press_B
+Text GLabel 10100 1650 2    50   Output ~ 0
+Matrix_press_A
+Text GLabel 2600 6650 2    50   Input ~ 0
+Matrix_press_B
+Text GLabel 2600 6750 2    50   Input ~ 0
+Matrix_press_C
+Text GLabel 2600 6850 2    50   Input ~ 0
+Matrix_press_D
+Text GLabel 2600 6950 2    50   Input ~ 0
+Matrix_press_E
+Wire Wire Line
+	2350 6650 2600 6650
+Wire Wire Line
+	2350 6550 2600 6550
+Wire Wire Line
+	2350 6850 2600 6850
+Wire Wire Line
+	2350 6950 2600 6950
 $EndSCHEMATC

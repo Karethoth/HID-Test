@@ -99,7 +99,7 @@ struct Keypad
     FeedbackPin1::setup(PIN_IN);
     FeedbackPin2::setup(PIN_IN);
 
-    FeedbackPin1::set();
+    //FeedbackPin1::set();
     FeedbackPin2::set();
 
     set_row(0);
@@ -210,19 +210,19 @@ int main()
     uint8_t active_row = (keypad.current_row) % 3;
 
     if(new_row & 0b01) {
-      LCD_PutsF("0", 128 - 3*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLACK, LCD_WHITE, &font_5_8);
+      LCD_PutsF("1", 128 - 3*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLACK, LCD_WHITE, &font_5_8);
     }
     else
     {
-      LCD_PutsF("1", 128 - 3*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLACK, LCD_WHITE, &font_5_8);
+      LCD_PutsF("0", 128 - 3*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLACK, LCD_WHITE, &font_5_8);
     }
 
     if(new_row & 0b10) {
-      LCD_PutsF("0", 128 - 2*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLACK, LCD_WHITE, &font_5_8);
+      LCD_PutsF("1", 128 - 2*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLACK, LCD_WHITE, &font_5_8);
     }
     else
     {
-      LCD_PutsF("1", 128 - 2*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLACK, LCD_WHITE, &font_5_8);
+      LCD_PutsF("0", 128 - 2*5, 128 - 5 * 8 + (1+active_row)*8, LCD_BLACK, LCD_WHITE, &font_5_8);
     }
 
     sleep_ms(10);
