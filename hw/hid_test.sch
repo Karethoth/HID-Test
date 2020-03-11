@@ -440,8 +440,8 @@ Wire Notes Line rgb(194, 0, 0)
 	3450 3550 3450 2700
 Text Notes 3500 3000 0    50   Italic 0
 TODO:\n- Protection
-Text Notes 7050 6750 0    50   ~ 0
-- 2020-03-02 - Missing parts ordered (ICs, 3v6s)\n- 2020-03-05 - Parts received
+Text Notes 7050 6700 0    50   ~ 0
+Practice device for reading key presses and interfacing TFT displays over USB.
 $Comp
 L Connector_Generic:Conn_02x03_Counter_Clockwise J3
 U 1 1 5E8073C7
