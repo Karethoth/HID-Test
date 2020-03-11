@@ -99,9 +99,6 @@ struct Keypad
     FeedbackPin1::setup(PIN_IN);
     FeedbackPin2::setup(PIN_IN);
 
-    //FeedbackPin1::set();
-    FeedbackPin2::set();
-
     set_row(0);
   }
 
