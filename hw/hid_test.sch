@@ -105,7 +105,7 @@ F 3 "" H 2900 2600 50  0001 C CNN
 	1    2900 2600
 	1    0    0    -1  
 $EndComp
-Text GLabel 3650 4650 2    50   Input ~ 0
+Text GLabel 3850 6550 2    50   BiDi ~ 0
 USB_D+
 Wire Wire Line
 	1350 1450 1350 900 
@@ -194,9 +194,9 @@ Wire Wire Line
 	2250 2000 2350 2000
 Wire Wire Line
 	2250 1650 2350 1650
-Text GLabel 2350 2000 2    50   Input ~ 0
+Text GLabel 2350 2000 2    50   BiDi ~ 0
 USB_D-
-Text GLabel 2350 1650 2    50   Output ~ 0
+Text GLabel 2350 1650 2    50   BiDi ~ 0
 USB_D+
 Wire Wire Line
 	1850 2500 1500 2500
@@ -297,7 +297,7 @@ Wire Wire Line
 Connection ~ 2900 2800
 Wire Wire Line
 	2900 2800 2900 3300
-Text GLabel 3650 4750 2    50   Output ~ 0
+Text GLabel 3850 6450 2    50   BiDi ~ 0
 USB_D-
 Wire Wire Line
 	3650 4650 3500 4650
@@ -887,18 +887,18 @@ Wire Wire Line
 	8850 4700 8850 4550
 Wire Wire Line
 	8850 4550 8550 4550
-Text GLabel 3850 6450 2    50   Output ~ 0
+Text GLabel 3650 4650 2    50   Output ~ 0
 Matrix_0b
-Text GLabel 3850 6550 2    50   Output ~ 0
+Text GLabel 3650 4750 2    50   Output ~ 0
 Matrix_1b
-Text GLabel 3850 6650 2    50   Output ~ 0
+Text GLabel 3650 4850 2    50   Output ~ 0
 Matrix_2b
+Wire Wire Line
+	3500 6550 3750 6550
 Wire Wire Line
 	3500 6450 3850 6450
 Wire Wire Line
-	3500 6550 3850 6550
-Wire Wire Line
-	3500 6650 3850 6650
+	3500 6650 3750 6650
 Text GLabel 3850 6750 2    50   Input ~ 0
 Matrix_press_A
 Wire Wire Line
@@ -1009,4 +1009,11 @@ Wire Wire Line
 	3850 7050 3500 7050
 Wire Wire Line
 	3500 7150 3850 7150
+Wire Wire Line
+	3650 4850 3500 4850
+Wire Wire Line
+	3750 6550 3750 6650
+Connection ~ 3750 6550
+Wire Wire Line
+	3750 6550 3850 6550
 $EndSCHEMATC
