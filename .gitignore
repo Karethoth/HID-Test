@@ -4,6 +4,4 @@
 *.elf
 *.hex
 *.sw?
-software/libs/v_usb/circuits/*
-software/libs/v_usb/examples/*
-software/libs/v_usb/tests/*
+software/libs/v_usb/*

@@ -556,13 +556,13 @@ Wire Wire Line
 	1350 2250 1850 2250
 Wire Wire Line
 	1350 1400 1850 1400
-Text GLabel 1350 1400 0    50   Input ~ 0
+Text GLabel 1350 1400 0    50   Input ~ 6
 MatrixBoard_Row_1
-Text GLabel 1350 2250 0    50   Input ~ 0
+Text GLabel 1350 2250 0    50   Input ~ 6
 MatrixBoard_Row_2
-Text GLabel 1350 3100 0    50   Input ~ 0
+Text GLabel 1350 3100 0    50   Input ~ 6
 MatrixBoard_Row_3
-Text GLabel 1350 3950 0    50   Input ~ 0
+Text GLabel 1350 3950 0    50   Input ~ 6
 MatrixBoard_Row_4
 Text GLabel 5300 1400 0    50   Input ~ 6
 Marix_Row_5
@@ -1545,23 +1545,23 @@ Wire Wire Line
 	2350 6450 2550 6450
 Wire Wire Line
 	2550 6450 2550 6250
-Text GLabel 1700 6450 0    50   Output ~ 0
+Text GLabel 1700 6450 0    50   Output ~ 6
 MatrixBoard_Row_1
 Wire Wire Line
 	1700 6450 1850 6450
-Text GLabel 1700 6550 0    50   Output ~ 0
+Text GLabel 1700 6550 0    50   Output ~ 6
 MatrixBoard_Row_2
-Text GLabel 1700 6650 0    50   Output ~ 0
+Text GLabel 1700 6650 0    50   Output ~ 6
 MatrixBoard_Row_3
-Text GLabel 1700 6750 0    50   Output ~ 0
+Text GLabel 1700 6750 0    50   Output ~ 6
 MatrixBoard_Row_4
-Text GLabel 1700 6850 0    50   Output ~ 0
+Text GLabel 1700 6850 0    50   Output ~ 6
 MatrixBoard_Row_5
-Text GLabel 1700 6950 0    50   Output ~ 0
+Text GLabel 1700 6950 0    50   Output ~ 6
 MatrixBoard_Row_6
-Text GLabel 1700 7050 0    50   Output ~ 0
+Text GLabel 1700 7050 0    50   Output ~ 6
 MatrixBoard_Row_7
-Text GLabel 1700 7150 0    50   Output ~ 0
+Text GLabel 1700 7150 0    50   Output ~ 6
 MatrixBoard_Row_8
 Wire Wire Line
 	1700 7150 1850 7150

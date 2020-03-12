@@ -495,7 +495,7 @@ F1 "key_matrix.sch" 50
 $EndSheet
 Wire Notes Line rgb(0, 194, 0)
 	7050 500  4850 500 
-Text GLabel 3650 5050 2    50   Input ~ 6
+Text GLabel 3650 5050 2    50   Output ~ 0
 SPI_~SS
 Text GLabel 4200 5150 2    50   Output ~ 6
 SPI_MOSI

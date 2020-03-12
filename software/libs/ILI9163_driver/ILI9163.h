@@ -147,13 +147,13 @@
 #define LCD_PIN_DATA  3 
 #endif
 
-#define LCD_PORT_CS   PORTB
-#define LCD_DDR_CS    DDRB
-#define LCD_PIN_CS    3
+#define LCD_PORT_CS   PORTC
+#define LCD_DDR_CS    DDRC
+#define LCD_PIN_CS    4
 
-#define LCD_PORT_RES  PORTB
-#define LCD_DDR_RES   DDRB
-#define LCD_PIN_RES   2
+#define LCD_PORT_RES  PORTC
+#define LCD_DDR_RES   DDRC
+#define LCD_PIN_RES   3
 
 #define LCD_PORT_CD   PORTB
 #define LCD_DDR_CD    DDRB
