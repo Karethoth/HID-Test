@@ -557,20 +557,20 @@ Wire Wire Line
 Wire Wire Line
 	1350 1400 1850 1400
 Text GLabel 1350 1400 0    50   Input ~ 0
-Matrix_Row_1
+MatrixBoard_Row_1
 Text GLabel 1350 2250 0    50   Input ~ 0
-Matrix_Row_2
+MatrixBoard_Row_2
 Text GLabel 1350 3100 0    50   Input ~ 0
-Matrix_Row_3
+MatrixBoard_Row_3
 Text GLabel 1350 3950 0    50   Input ~ 0
-Matrix_Row_4
-Text GLabel 5300 1400 0    50   Input ~ 0
+MatrixBoard_Row_4
+Text GLabel 5300 1400 0    50   Input ~ 6
 Marix_Row_5
-Text GLabel 5300 2250 0    50   Input ~ 0
+Text GLabel 5300 2250 0    50   Input ~ 6
 Matrix_Row_6
-Text GLabel 5300 3100 0    50   Input ~ 0
+Text GLabel 5300 3100 0    50   Input ~ 6
 Matrix_Row_7
-Text GLabel 5300 3950 0    50   Input ~ 0
+Text GLabel 5300 3950 0    50   Input ~ 6
 Matrix_Row_8
 Wire Wire Line
 	5300 1400 5700 1400
@@ -584,17 +584,17 @@ Connection ~ 5700 3100
 Wire Wire Line
 	5300 2250 5700 2250
 Connection ~ 5700 2250
-Text GLabel 2250 4950 3    50   BiDi ~ 0
+Text GLabel 2250 4950 3    50   BiDi ~ 6
 Switch_Matrix_A
 Wire Wire Line
 	2250 4650 2250 4950
-Text GLabel 2800 4950 3    50   BiDi ~ 0
+Text GLabel 2800 4950 3    50   BiDi ~ 6
 Switch_Matrix_B
 Wire Wire Line
 	2800 4650 2800 4950
-Text GLabel 6100 1200 1    50   BiDi ~ 0
+Text GLabel 6100 1200 1    50   BiDi ~ 6
 Switch_Matrix_A
-Text GLabel 6650 1200 1    50   BiDi ~ 0
+Text GLabel 6650 1200 1    50   BiDi ~ 6
 Switch_Matrix_B
 Wire Wire Line
 	6100 2100 6100 1200
@@ -602,39 +602,17 @@ Connection ~ 6100 2100
 Wire Wire Line
 	6650 2100 6650 1200
 Connection ~ 6650 2100
-Text GLabel 6100 4950 3    50   BiDi ~ 0
+Text GLabel 6100 4950 3    50   BiDi ~ 6
 Switch_Matrix_A
 Wire Wire Line
 	6100 4650 6100 4950
-Text GLabel 6650 4950 3    50   BiDi ~ 0
+Text GLabel 6650 4950 3    50   BiDi ~ 6
 Switch_Matrix_B
 Wire Wire Line
 	6650 4650 6650 4950
-$Comp
-L Device:R R?
-U 1 1 5FB03216
-P 9950 2650
-F 0 "R?" H 9850 2650 50  0000 C CNN
-F 1 "4.7k" H 10100 2650 50  0000 C CNN
-F 2 "" V 9880 2650 50  0001 C CNN
-F 3 "~" H 9950 2650 50  0001 C CNN
-	1    9950 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FB0321C
-P 9950 2800
-F 0 "#PWR?" H 9950 2550 50  0001 C CNN
-F 1 "GND" H 9955 2627 50  0000 C CNN
-F 2 "" H 9950 2800 50  0001 C CNN
-F 3 "" H 9950 2800 50  0001 C CNN
-	1    9950 2800
-	1    0    0    -1  
-$EndComp
-Text GLabel 9800 2400 0    50   Input ~ 0
+Text GLabel 4100 6650 2    50   Input ~ 6
 Switch_Matrix_B
-Text GLabel 3350 4950 3    50   BiDi ~ 0
+Text GLabel 3350 4950 3    50   BiDi ~ 6
 Switch_Matrix_C
 Connection ~ 3350 4650
 Wire Wire Line
@@ -917,12 +895,12 @@ F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 6800 19
 	1    6800 1950
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7200 1200 1    50   BiDi ~ 0
+Text GLabel 7200 1200 1    50   BiDi ~ 6
 Switch_Matrix_C
 Wire Wire Line
 	7200 2100 7200 1200
 Connection ~ 7200 2100
-Text GLabel 7200 4950 3    50   BiDi ~ 0
+Text GLabel 7200 4950 3    50   BiDi ~ 6
 Switch_Matrix_C
 Wire Wire Line
 	7200 4650 7200 4950
@@ -931,7 +909,7 @@ Connection ~ 6250 1400
 Connection ~ 6250 2250
 Connection ~ 6250 3100
 Connection ~ 6250 3950
-Text GLabel 3900 4950 3    50   BiDi ~ 0
+Text GLabel 3900 4950 3    50   BiDi ~ 6
 Switch_Matrix_D
 Connection ~ 3900 4650
 Wire Wire Line
@@ -1208,12 +1186,12 @@ F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 7350 19
 	1    7350 1950
 	0    -1   -1   0   
 $EndComp
-Text GLabel 7750 1200 1    50   BiDi ~ 0
+Text GLabel 7750 1200 1    50   BiDi ~ 6
 Switch_Matrix_D
 Wire Wire Line
 	7750 2100 7750 1200
 Connection ~ 7750 2100
-Text GLabel 7750 4950 3    50   BiDi ~ 0
+Text GLabel 7750 4950 3    50   BiDi ~ 6
 Switch_Matrix_D
 Wire Wire Line
 	7750 4650 7750 4950
@@ -1237,7 +1215,7 @@ F 3 "~" H 2050 6750 50  0001 C CNN
 	1    2050 6750
 	1    0    0    -1  
 $EndComp
-Text GLabel 4450 4950 3    50   BiDi ~ 0
+Text GLabel 4450 4950 3    50   BiDi ~ 6
 Switch_Matrix_E
 Connection ~ 4450 4650
 Wire Wire Line
@@ -1378,7 +1356,7 @@ F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 4050 19
 $EndComp
 Wire Wire Line
 	4450 4650 4450 4950
-Text GLabel 8300 4950 3    50   BiDi ~ 0
+Text GLabel 8300 4950 3    50   BiDi ~ 6
 Switch_Matrix_E
 Connection ~ 8300 4650
 Wire Wire Line
@@ -1519,7 +1497,7 @@ F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 7900 19
 $EndComp
 Wire Wire Line
 	8300 4650 8300 4950
-Text GLabel 8300 1200 1    50   BiDi ~ 0
+Text GLabel 8300 1200 1    50   BiDi ~ 6
 Switch_Matrix_E
 Wire Wire Line
 	8300 2100 8300 1200
@@ -1535,18 +1513,18 @@ Connection ~ 7350 3950
 $Comp
 L power:GND #PWR?
 U 1 1 6021557B
-P 2550 7300
-F 0 "#PWR?" H 2550 7050 50  0001 C CNN
-F 1 "GND" H 2555 7127 50  0000 C CNN
-F 2 "" H 2550 7300 50  0001 C CNN
-F 3 "" H 2550 7300 50  0001 C CNN
-	1    2550 7300
+P 2550 7550
+F 0 "#PWR?" H 2550 7300 50  0001 C CNN
+F 1 "GND" H 2555 7377 50  0000 C CNN
+F 2 "" H 2550 7550 50  0001 C CNN
+F 3 "" H 2550 7550 50  0001 C CNN
+	1    2550 7550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2350 7150 2550 7150
 Wire Wire Line
-	2550 7150 2550 7300
+	2550 7150 2550 7550
 Wire Wire Line
 	2350 7050 2550 7050
 Wire Wire Line
@@ -1568,23 +1546,23 @@ Wire Wire Line
 Wire Wire Line
 	2550 6450 2550 6250
 Text GLabel 1700 6450 0    50   Output ~ 0
-Matrix_Row_1
+MatrixBoard_Row_1
 Wire Wire Line
 	1700 6450 1850 6450
 Text GLabel 1700 6550 0    50   Output ~ 0
-Matrix_Row_2
+MatrixBoard_Row_2
 Text GLabel 1700 6650 0    50   Output ~ 0
-Matrix_Row_3
+MatrixBoard_Row_3
 Text GLabel 1700 6750 0    50   Output ~ 0
-Matrix_Row_4
+MatrixBoard_Row_4
 Text GLabel 1700 6850 0    50   Output ~ 0
-Matrix_Row_5
+MatrixBoard_Row_5
 Text GLabel 1700 6950 0    50   Output ~ 0
-Matrix_Row_6
+MatrixBoard_Row_6
 Text GLabel 1700 7050 0    50   Output ~ 0
-Matrix_Row_7
+MatrixBoard_Row_7
 Text GLabel 1700 7150 0    50   Output ~ 0
-Matrix_Row_8
+MatrixBoard_Row_8
 Wire Wire Line
 	1700 7150 1850 7150
 Wire Wire Line
@@ -1599,165 +1577,71 @@ Wire Wire Line
 	1850 6650 1700 6650
 Wire Wire Line
 	1700 6550 1850 6550
-Text GLabel 2600 6550 2    50   Input ~ 0
-Matrix_press_A
-Wire Wire Line
-	2350 6750 2600 6750
-Wire Wire Line
-	9950 2400 10100 2400
-Wire Wire Line
-	9800 2400 9950 2400
-Wire Wire Line
-	9950 2400 9950 2500
-Connection ~ 9950 2400
-$Comp
-L Device:R R?
-U 1 1 6043FD5A
-P 9950 1900
-F 0 "R?" H 9850 1900 50  0000 C CNN
-F 1 "4.7k" H 10100 1900 50  0000 C CNN
-F 2 "" V 9880 1900 50  0001 C CNN
-F 3 "~" H 9950 1900 50  0001 C CNN
-	1    9950 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6043FD60
-P 9950 2050
-F 0 "#PWR?" H 9950 1800 50  0001 C CNN
-F 1 "GND" H 9955 1877 50  0000 C CNN
-F 2 "" H 9950 2050 50  0001 C CNN
-F 3 "" H 9950 2050 50  0001 C CNN
-	1    9950 2050
-	1    0    0    -1  
-$EndComp
-Text GLabel 9800 1650 0    50   Input ~ 0
+Text GLabel 4100 6550 2    50   Input ~ 6
 Switch_Matrix_A
 Wire Wire Line
-	9950 1650 10100 1650
-Wire Wire Line
-	9800 1650 9950 1650
-Wire Wire Line
-	9950 1650 9950 1750
-Connection ~ 9950 1650
-$Comp
-L Device:R R?
-U 1 1 60448737
-P 9950 3400
-F 0 "R?" H 9850 3400 50  0000 C CNN
-F 1 "4.7k" H 10100 3400 50  0000 C CNN
-F 2 "" V 9880 3400 50  0001 C CNN
-F 3 "~" H 9950 3400 50  0001 C CNN
-	1    9950 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6044873D
-P 9950 3550
-F 0 "#PWR?" H 9950 3300 50  0001 C CNN
-F 1 "GND" H 9955 3377 50  0000 C CNN
-F 2 "" H 9950 3550 50  0001 C CNN
-F 3 "" H 9950 3550 50  0001 C CNN
-	1    9950 3550
-	1    0    0    -1  
-$EndComp
-Text GLabel 9800 3150 0    50   Input ~ 0
+	3850 6550 4100 6550
+Connection ~ 3850 6550
+Text GLabel 4100 6750 2    50   Input ~ 6
 Switch_Matrix_C
 Wire Wire Line
-	9950 3150 10100 3150
+	3650 6750 4100 6750
 Wire Wire Line
-	9800 3150 9950 3150
-Wire Wire Line
-	9950 3150 9950 3250
-Connection ~ 9950 3150
-$Comp
-L Device:R R?
-U 1 1 604608AC
-P 9950 4150
-F 0 "R?" H 9850 4150 50  0000 C CNN
-F 1 "4.7k" H 10100 4150 50  0000 C CNN
-F 2 "" V 9880 4150 50  0001 C CNN
-F 3 "~" H 9950 4150 50  0001 C CNN
-	1    9950 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 604608B2
-P 9950 4300
-F 0 "#PWR?" H 9950 4050 50  0001 C CNN
-F 1 "GND" H 9955 4127 50  0000 C CNN
-F 2 "" H 9950 4300 50  0001 C CNN
-F 3 "" H 9950 4300 50  0001 C CNN
-	1    9950 4300
-	1    0    0    -1  
-$EndComp
-Text GLabel 9800 3900 0    50   Input ~ 0
+	3650 6750 3650 7050
+Connection ~ 3650 6750
+Text GLabel 4100 6850 2    50   Input ~ 6
 Switch_Matrix_D
 Wire Wire Line
-	9950 3900 10100 3900
+	3550 6850 4100 6850
 Wire Wire Line
-	9800 3900 9950 3900
-Wire Wire Line
-	9950 3900 9950 4000
-Connection ~ 9950 3900
-Text GLabel 10100 4650 2    50   Output ~ 0
-Matrix_press_E
-$Comp
-L Device:R R?
-U 1 1 604696DD
-P 9950 4900
-F 0 "R?" H 9850 4900 50  0000 C CNN
-F 1 "4.7k" H 10100 4900 50  0000 C CNN
-F 2 "" V 9880 4900 50  0001 C CNN
-F 3 "~" H 9950 4900 50  0001 C CNN
-	1    9950 4900
-	1    0    0    -1  
-$EndComp
+	3550 6850 3550 7050
+Connection ~ 3550 6850
 $Comp
 L power:GND #PWR?
 U 1 1 604696E3
-P 9950 5050
-F 0 "#PWR?" H 9950 4800 50  0001 C CNN
-F 1 "GND" H 9955 4877 50  0000 C CNN
-F 2 "" H 9950 5050 50  0001 C CNN
-F 3 "" H 9950 5050 50  0001 C CNN
-	1    9950 5050
+P 3850 7550
+F 0 "#PWR?" H 3850 7300 50  0001 C CNN
+F 1 "GND" H 3855 7377 50  0000 C CNN
+F 2 "" H 3850 7550 50  0001 C CNN
+F 3 "" H 3850 7550 50  0001 C CNN
+	1    3850 7550
 	1    0    0    -1  
 $EndComp
-Text GLabel 9800 4650 0    50   Input ~ 0
+Text GLabel 4100 6950 2    50   Input ~ 6
 Switch_Matrix_E
+$Comp
+L Device:R_Network10 RN?
+U 1 1 60676A28
+P 3350 7250
+F 0 "RN?" H 2770 7204 50  0000 R CNN
+F 1 "4.7k" H 2770 7295 50  0000 R CNN
+F 2 "Resistor_THT:R_Array_SIP11" V 3925 7250 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 3350 7250 50  0001 C CNN
+	1    3350 7250
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	9950 4650 10100 4650
+	3850 7450 3850 7550
 Wire Wire Line
-	9800 4650 9950 4650
+	3450 6950 3450 7050
+Connection ~ 3450 6950
 Wire Wire Line
-	9950 4650 9950 4750
-Connection ~ 9950 4650
-Text GLabel 10100 3900 2    50   Output ~ 0
-Matrix_press_D
-Text GLabel 10100 3150 2    50   Output ~ 0
-Matrix_press_C
-Text GLabel 10100 2400 2    50   Output ~ 0
-Matrix_press_B
-Text GLabel 10100 1650 2    50   Output ~ 0
-Matrix_press_A
-Text GLabel 2600 6650 2    50   Input ~ 0
-Matrix_press_B
-Text GLabel 2600 6750 2    50   Input ~ 0
-Matrix_press_C
-Text GLabel 2600 6850 2    50   Input ~ 0
-Matrix_press_D
-Text GLabel 2600 6950 2    50   Input ~ 0
-Matrix_press_E
+	3450 6950 4100 6950
 Wire Wire Line
-	2350 6650 2600 6650
+	3850 6550 3850 7050
+Connection ~ 3750 6650
 Wire Wire Line
-	2350 6550 2600 6550
+	3750 6650 3750 7050
 Wire Wire Line
-	2350 6850 2600 6850
+	3750 6650 4100 6650
 Wire Wire Line
-	2350 6950 2600 6950
+	2350 6550 3850 6550
+Wire Wire Line
+	2350 6650 3750 6650
+Wire Wire Line
+	2350 6750 3650 6750
+Wire Wire Line
+	2350 6850 3550 6850
+Wire Wire Line
+	2350 6950 3450 6950
 $EndSCHEMATC

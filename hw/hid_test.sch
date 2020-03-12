@@ -105,7 +105,7 @@ F 3 "" H 2900 2600 50  0001 C CNN
 	1    2900 2600
 	1    0    0    -1  
 $EndComp
-Text GLabel 3850 6550 2    50   BiDi ~ 0
+Text GLabel 3850 6550 2    50   BiDi ~ 6
 USB_D+
 Wire Wire Line
 	1350 1450 1350 900 
@@ -194,9 +194,9 @@ Wire Wire Line
 	2250 2000 2350 2000
 Wire Wire Line
 	2250 1650 2350 1650
-Text GLabel 2350 2000 2    50   BiDi ~ 0
+Text GLabel 2350 2000 2    50   BiDi ~ 6
 USB_D-
-Text GLabel 2350 1650 2    50   BiDi ~ 0
+Text GLabel 2350 1650 2    50   BiDi ~ 6
 USB_D+
 Wire Wire Line
 	1850 2500 1500 2500
@@ -297,11 +297,11 @@ Wire Wire Line
 Connection ~ 2900 2800
 Wire Wire Line
 	2900 2800 2900 3300
-Text GLabel 3850 6450 2    50   BiDi ~ 0
+Text GLabel 3850 6450 2    50   BiDi ~ 6
 USB_D-
 Wire Wire Line
 	3650 4650 3500 4650
-Text Notes 2650 4450 0    50   Italic 0
+Text Notes 2650 4450 0    50   Italic 6
 Ground Plane
 Wire Notes Line
 	2200 2700 3200 2700
@@ -408,9 +408,6 @@ F 3 "~" H 3700 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 2800 4000 3750
-Connection ~ 4000 3750
-Wire Wire Line
 	4000 3750 4000 3850
 Connection ~ 4000 3850
 Wire Wire Line
@@ -430,17 +427,7 @@ Wire Wire Line
 Connection ~ 4000 4350
 Wire Wire Line
 	4000 4350 4000 4450
-Wire Notes Line rgb(194, 0, 0)
-	3450 2700 4100 2700
-Wire Notes Line rgb(194, 0, 0)
-	4100 2700 4100 3550
-Wire Notes Line rgb(194, 0, 0)
-	4100 3550 3450 3550
-Wire Notes Line rgb(194, 0, 0)
-	3450 3550 3450 2700
-Text Notes 3500 3000 0    50   Italic 0
-TODO:\n- Protection
-Text Notes 7050 6700 0    50   ~ 0
+Text Notes 7050 6700 0    50   ~ 6
 Practice device for reading key presses and interfacing TFT displays over USB.
 $Comp
 L Connector_Generic:Conn_02x03_Counter_Clockwise J3
@@ -483,13 +470,13 @@ Wire Wire Line
 	4050 1150 4150 1150
 Wire Wire Line
 	4150 1150 4150 1000
-Text GLabel 4150 1250 2    50   Input ~ 0
+Text GLabel 4150 1250 2    50   Input ~ 6
 SPI_MOSI
 Wire Wire Line
 	4050 1250 4150 1250
-Text GLabel 3450 1150 0    50   Output ~ 0
+Text GLabel 3450 1150 0    50   Output ~ 6
 SPI_MISO
-Text GLabel 3450 1250 0    50   Output ~ 0
+Text GLabel 3450 1250 0    50   Output ~ 6
 SPI_SCK
 Wire Wire Line
 	3550 1150 3450 1150
@@ -498,7 +485,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 3250 1650 3250
 Connection ~ 1650 3250
-Text GLabel 1250 3250 0    50   Input ~ 0
+Text GLabel 1250 3250 0    50   Input ~ 6
 ISP_~RST
 $Sheet
 S 7950 3650 700  1100
@@ -508,15 +495,15 @@ F1 "key_matrix.sch" 50
 $EndSheet
 Wire Notes Line rgb(0, 194, 0)
 	7050 500  4850 500 
-Text GLabel 3650 5050 2    50   Input ~ 0
+Text GLabel 3650 5050 2    50   Input ~ 6
 SPI_~SS
-Text GLabel 4200 5150 2    50   Output ~ 0
+Text GLabel 4200 5150 2    50   Output ~ 6
 SPI_MOSI
-Text GLabel 3650 5250 2    50   Input ~ 0
+Text GLabel 3650 5250 2    50   Input ~ 6
 SPI_MISO
-Text GLabel 3650 5350 2    50   Output ~ 0
+Text GLabel 3650 5350 2    50   Output ~ 6
 SPI_SCK
-Text GLabel 3450 1400 0    50   Output ~ 0
+Text GLabel 3450 1400 0    50   Output ~ 6
 ISP_~RST
 Wire Wire Line
 	3500 5150 4100 5150
@@ -532,22 +519,20 @@ Connection ~ 2900 3300
 Wire Wire Line
 	2900 3300 2900 3450
 Wire Wire Line
-	2900 2800 4000 2800
-Wire Wire Line
 	3550 1350 3550 1400
 Wire Wire Line
 	3550 1400 3450 1400
-Text GLabel 3850 6050 2    50   Output ~ 0
+Text GLabel 3850 6050 2    50   Output ~ 6
 DISPLAY_SEL_2
-Text GLabel 3850 6150 2    50   Output ~ 0
+Text GLabel 3850 6150 2    50   Output ~ 6
 DISPLAY_SEL_3
-Text GLabel 3850 6250 2    50   Output ~ 0
+Text GLabel 3850 6250 2    50   Output ~ 6
 DISPLAY_SEL_4
 Wire Wire Line
 	3850 6050 3500 6050
 Wire Wire Line
 	3850 6150 3500 6150
-Text GLabel 4500 5850 2    50   Output ~ 0
+Text GLabel 4500 5850 2    50   Output ~ 6
 DISPLAY_~RST~
 Wire Wire Line
 	3850 6250 3500 6250
@@ -558,7 +543,7 @@ Wire Wire Line
 Connection ~ 4100 5150
 Wire Wire Line
 	4100 5150 4200 5150
-Text GLabel 4200 5050 2    50   Output ~ 0
+Text GLabel 4200 5050 2    50   Output ~ 6
 SPI_SDA
 Wire Wire Line
 	3500 5050 3650 5050
@@ -653,19 +638,19 @@ Wire Wire Line
 	3500 5650 3650 5650
 Wire Wire Line
 	3500 5550 3650 5550
-Text GLabel 3650 5650 2    50   Output ~ 0
+Text GLabel 3650 5650 2    50   Output ~ 6
 TWI_SCL
-Text GLabel 3650 5550 2    50   BiDi ~ 0
+Text GLabel 3650 5550 2    50   BiDi ~ 6
 TWI_SDA
 Wire Wire Line
 	3500 5850 4500 5850
 Wire Wire Line
 	3500 5950 3850 5950
-Text GLabel 3850 5950 2    50   Output ~ 0
+Text GLabel 3850 5950 2    50   Output ~ 6
 DISPLAY_SEL_1
-Text GLabel 5250 1600 0    50   Output ~ 0
+Text GLabel 5250 1600 0    50   Output ~ 6
 TWI_SDA
-Text GLabel 5250 1700 0    50   Output ~ 0
+Text GLabel 5250 1700 0    50   Output ~ 6
 TWI_SCK
 $Comp
 L Device:R R?
@@ -725,11 +710,11 @@ Wire Wire Line
 	7200 3400 7200 3500
 Wire Wire Line
 	7600 4350 7700 4350
-Text GLabel 6000 3850 0    50   Input ~ 0
+Text GLabel 6000 3850 0    50   Input ~ 6
 Matrix_0b
-Text GLabel 6000 3950 0    50   Input ~ 0
+Text GLabel 6000 3950 0    50   Input ~ 6
 Matrix_1b
-Text GLabel 6000 4050 0    50   Input ~ 0
+Text GLabel 6000 4050 0    50   Input ~ 6
 Matrix_2b
 $Comp
 L Transistor_BJT:2N3904 Q?
@@ -887,11 +872,11 @@ Wire Wire Line
 	8850 4700 8850 4550
 Wire Wire Line
 	8850 4550 8550 4550
-Text GLabel 3650 4650 2    50   Output ~ 0
+Text GLabel 3650 4650 2    50   Output ~ 6
 Matrix_0b
-Text GLabel 3650 4750 2    50   Output ~ 0
+Text GLabel 3650 4750 2    50   Output ~ 6
 Matrix_1b
-Text GLabel 3650 4850 2    50   Output ~ 0
+Text GLabel 3650 4850 2    50   Output ~ 6
 Matrix_2b
 Wire Wire Line
 	3500 6550 3750 6550
@@ -899,7 +884,7 @@ Wire Wire Line
 	3500 6450 3850 6450
 Wire Wire Line
 	3500 6650 3750 6650
-Text GLabel 3850 6750 2    50   Input ~ 0
+Text GLabel 3850 6750 2    50   Input ~ 6
 Matrix_press_A
 Wire Wire Line
 	3500 6750 3850 6750
@@ -946,28 +931,28 @@ Wire Wire Line
 	8000 4550 8050 4550
 Wire Wire Line
 	7600 4650 8000 4650
-Text GLabel 8900 3950 2    50   Output ~ 0
+Text GLabel 8900 3950 2    50   Output ~ 6
 Matrix_press_A
 Wire Wire Line
 	8550 4450 8850 4450
 Wire Wire Line
 	8850 4450 8850 4550
 Connection ~ 8850 4550
-Text GLabel 6550 1000 2    50   Input ~ 0
+Text GLabel 6550 1000 2    50   Input ~ 6
 SPI_~SS~
-Text GLabel 6550 1250 2    50   Input ~ 0
+Text GLabel 6550 1250 2    50   Input ~ 6
 SPI_SCK
-Text GLabel 6550 1150 2    50   Input ~ 0
+Text GLabel 6550 1150 2    50   Input ~ 6
 SPI_SDA
-Text GLabel 6550 1400 2    50   Input ~ 0
+Text GLabel 6550 1400 2    50   Input ~ 6
 DISPLAY_~RST~
-Text GLabel 6550 1850 2    50   Input ~ 0
+Text GLabel 6550 1850 2    50   Input ~ 6
 DISPLAY_SEL_4
-Text GLabel 6550 1750 2    50   Input ~ 0
+Text GLabel 6550 1750 2    50   Input ~ 6
 DISPLAY_SEL_3
-Text GLabel 6550 1650 2    50   Input ~ 0
+Text GLabel 6550 1650 2    50   Input ~ 6
 DISPLAY_SEL_2
-Text GLabel 6550 1550 2    50   Input ~ 0
+Text GLabel 6550 1550 2    50   Input ~ 6
 DISPLAY_SEL_1
 $Sheet
 S 6450 850  800  1150
@@ -977,13 +962,13 @@ F1 "displays.sch" 50
 $EndSheet
 Wire Wire Line
 	8550 3950 8900 3950
-Text GLabel 8900 4050 2    50   Output ~ 0
+Text GLabel 8900 4050 2    50   Output ~ 6
 Matrix_press_B
-Text GLabel 8900 4150 2    50   Output ~ 0
+Text GLabel 8900 4150 2    50   Output ~ 6
 Matrix_press_C
-Text GLabel 8900 4250 2    50   Output ~ 0
+Text GLabel 8900 4250 2    50   Output ~ 6
 Matrix_press_D
-Text GLabel 8900 4350 2    50   Output ~ 0
+Text GLabel 8900 4350 2    50   Output ~ 6
 Matrix_press_E
 Wire Wire Line
 	8550 4050 8900 4050
@@ -993,13 +978,13 @@ Wire Wire Line
 	8550 4250 8900 4250
 Wire Wire Line
 	8550 4350 8900 4350
-Text GLabel 3850 6850 2    50   Input ~ 0
+Text GLabel 3850 6850 2    50   Input ~ 6
 Matrix_press_B
-Text GLabel 3850 6950 2    50   Input ~ 0
+Text GLabel 3850 6950 2    50   Input ~ 6
 Matrix_press_C
-Text GLabel 3850 7050 2    50   Input ~ 0
+Text GLabel 3850 7050 2    50   Input ~ 6
 Matrix_press_D
-Text GLabel 3850 7150 2    50   Input ~ 0
+Text GLabel 3850 7150 2    50   Input ~ 6
 Matrix_press_E
 Wire Wire Line
 	3850 6850 3500 6850
@@ -1016,4 +1001,35 @@ Wire Wire Line
 Connection ~ 3750 6550
 Wire Wire Line
 	3750 6550 3850 6550
+$Comp
+L Device:R R?
+U 1 1 6095C760
+P 3700 2800
+F 0 "R?" V 3907 2800 50  0000 C CNN
+F 1 "1k" V 3816 2800 50  0000 C CNN
+F 2 "" V 3630 2800 50  0001 C CNN
+F 3 "~" H 3700 2800 50  0001 C CNN
+	1    3700 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 2800 4000 2800
+$Comp
+L Device:D D?
+U 1 1 60969B12
+P 4000 3200
+F 0 "D?" V 4046 3121 50  0000 R CNN
+F 1 "D" V 3955 3121 50  0000 R CNN
+F 2 "" H 4000 3200 50  0001 C CNN
+F 3 "~" H 4000 3200 50  0001 C CNN
+	1    4000 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4000 2800 4000 3050
+Wire Wire Line
+	3550 2800 2900 2800
+Wire Wire Line
+	4000 3350 4000 3750
+Connection ~ 4000 3750
 $EndSCHEMATC

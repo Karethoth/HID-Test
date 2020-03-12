@@ -121,13 +121,13 @@ Wire Wire Line
 	5050 3900 5050 2850
 Wire Wire Line
 	5150 1850 4750 1850
-Text GLabel 4750 2300 0    50   Input ~ 0
+Text GLabel 4750 2300 0    50   Input ~ 6
 DISPLAY_~RST~_3v3
-Text GLabel 4750 1850 0    50   Input ~ 0
+Text GLabel 4750 1850 0    50   Input ~ 6
 SPI_SDA_3v3
-Text GLabel 4750 2000 0    50   Input ~ 0
+Text GLabel 4750 2000 0    50   Input ~ 6
 SPI_SCK_3v3
-Text GLabel 4750 3500 0    50   Input ~ 0
+Text GLabel 4750 3500 0    50   Input ~ 6
 DISPLAY_SEL_2_3v3
 Wire Wire Line
 	5650 3400 5650 4450
@@ -139,7 +139,7 @@ Wire Wire Line
 	5250 2650 5250 1700
 Wire Wire Line
 	5250 1700 4750 1700
-Text GLabel 4750 1700 0    50   Input ~ 0
+Text GLabel 4750 1700 0    50   Input ~ 6
 SPI_~SS~_3v3
 Wire Wire Line
 	5700 3700 5250 3700
@@ -247,13 +247,13 @@ Wire Wire Line
 	5650 4450 5650 5500
 Wire Wire Line
 	5700 4550 4800 4550
-Text GLabel 4800 4550 0    50   Input ~ 0
+Text GLabel 4800 4550 0    50   Input ~ 6
 DISPLAY_SEL_3_3v3
-Text GLabel 4800 5600 0    50   Input ~ 0
+Text GLabel 4800 5600 0    50   Input ~ 6
 DISPLAY_SEL_4_3v3
 Wire Wire Line
 	5700 2450 4750 2450
-Text GLabel 4750 2450 0    50   Input ~ 0
+Text GLabel 4750 2450 0    50   Input ~ 6
 DISPLAY_SEL_1_3v3
 $Comp
 L Device:R R?
@@ -269,51 +269,12 @@ F 3 "~" H 1550 1850 50  0001 C CNN
 	1    1550 1850
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5F62FB18
-P 1950 1850
-AR Path="/5F62FB18" Ref="R?"  Part="1" 
-AR Path="/5F396FD6/5F62FB18" Ref="R?"  Part="1" 
-AR Path="/5F70696F/5F62FB18" Ref="R?"  Part="1" 
-F 0 "R?" V 1850 1850 50  0000 C CNN
-F 1 "1k" V 2050 1850 50  0000 C CNN
-F 2 "" V 1880 1850 50  0001 C CNN
-F 3 "~" H 1950 1850 50  0001 C CNN
-	1    1950 1850
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F62FB1E
-P 2200 1850
-AR Path="/5F62FB1E" Ref="#PWR?"  Part="1" 
-AR Path="/5F396FD6/5F62FB1E" Ref="#PWR?"  Part="1" 
-AR Path="/5F70696F/5F62FB1E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2200 1600 50  0001 C CNN
-F 1 "GND" V 2205 1722 50  0000 R CNN
-F 2 "" H 2200 1850 50  0001 C CNN
-F 3 "" H 2200 1850 50  0001 C CNN
-	1    2200 1850
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1300 1850 1400 1850
-Text GLabel 1300 1850 0    50   Input ~ 0
+Text GLabel 1300 1850 0    50   Input ~ 6
 SPI_SCK
-Wire Wire Line
-	1700 1850 1750 1850
-Wire Wire Line
-	2100 1850 2200 1850
-Wire Wire Line
-	1750 1850 1750 2050
-Connection ~ 1750 1850
-Wire Wire Line
-	1750 1850 1800 1850
-Text GLabel 1950 2050 2    50   Output ~ 0
+Text GLabel 2750 1850 2    50   Output ~ 6
 SPI_SCK_3v3
-Wire Wire Line
-	1750 2050 1950 2050
 $Comp
 L Device:R R?
 U 1 1 5F62FB2D
@@ -328,47 +289,10 @@ F 3 "~" H 1550 2300 50  0001 C CNN
 	1    1550 2300
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5F62FB33
-P 1950 2300
-AR Path="/5F62FB33" Ref="R?"  Part="1" 
-AR Path="/5F396FD6/5F62FB33" Ref="R?"  Part="1" 
-AR Path="/5F70696F/5F62FB33" Ref="R?"  Part="1" 
-F 0 "R?" V 1850 2300 50  0000 C CNN
-F 1 "1k" V 2050 2300 50  0000 C CNN
-F 2 "" V 1880 2300 50  0001 C CNN
-F 3 "~" H 1950 2300 50  0001 C CNN
-	1    1950 2300
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F62FB39
-P 2200 2300
-AR Path="/5F62FB39" Ref="#PWR?"  Part="1" 
-AR Path="/5F396FD6/5F62FB39" Ref="#PWR?"  Part="1" 
-AR Path="/5F70696F/5F62FB39" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2200 2050 50  0001 C CNN
-F 1 "GND" V 2205 2172 50  0000 R CNN
-F 2 "" H 2200 2300 50  0001 C CNN
-F 3 "" H 2200 2300 50  0001 C CNN
-	1    2200 2300
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1300 2300 1400 2300
-Text GLabel 1300 2300 0    50   Input ~ 0
+Text GLabel 1300 2300 0    50   Input ~ 6
 SPI_SDA
-Wire Wire Line
-	1700 2300 1750 2300
-Wire Wire Line
-	2100 2300 2200 2300
-Wire Wire Line
-	1750 2300 1750 2500
-Connection ~ 1750 2300
-Wire Wire Line
-	1750 2300 1800 2300
 $Comp
 L Device:R R?
 U 1 1 5F62FB46
@@ -384,53 +308,26 @@ F 3 "~" H 1550 1400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5F62FB4C
-P 1950 1400
-AR Path="/5F62FB4C" Ref="R?"  Part="1" 
-AR Path="/5F396FD6/5F62FB4C" Ref="R?"  Part="1" 
-AR Path="/5F70696F/5F62FB4C" Ref="R?"  Part="1" 
-F 0 "R?" V 1850 1400 50  0000 C CNN
-F 1 "1k" V 2050 1400 50  0000 C CNN
-F 2 "" V 1880 1400 50  0001 C CNN
-F 3 "~" H 1950 1400 50  0001 C CNN
-	1    1950 1400
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5F62FB52
-P 2200 1400
+P 2550 6200
 AR Path="/5F62FB52" Ref="#PWR?"  Part="1" 
 AR Path="/5F396FD6/5F62FB52" Ref="#PWR?"  Part="1" 
 AR Path="/5F70696F/5F62FB52" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2200 1150 50  0001 C CNN
-F 1 "GND" V 2205 1272 50  0000 R CNN
-F 2 "" H 2200 1400 50  0001 C CNN
-F 3 "" H 2200 1400 50  0001 C CNN
-	1    2200 1400
-	0    -1   -1   0   
+F 0 "#PWR?" H 2550 5950 50  0001 C CNN
+F 1 "GND" V 2555 6072 50  0000 R CNN
+F 2 "" H 2550 6200 50  0001 C CNN
+F 3 "" H 2550 6200 50  0001 C CNN
+	1    2550 6200
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1300 1400 1400 1400
-Text GLabel 1300 1400 0    50   Input ~ 0
+Text GLabel 1300 1400 0    50   Input ~ 6
 SPI_~SS
-Wire Wire Line
-	1700 1400 1750 1400
-Wire Wire Line
-	2100 1400 2200 1400
-Wire Wire Line
-	1750 1400 1750 1600
-Connection ~ 1750 1400
-Wire Wire Line
-	1750 1400 1800 1400
-Wire Wire Line
-	1750 2500 1950 2500
-Text GLabel 1950 2500 2    50   Output ~ 0
+Text GLabel 2750 2300 2    50   Output ~ 6
 SPI_SDA_3v3
-Wire Wire Line
-	1750 1600 1950 1600
-Text GLabel 1950 1600 2    50   Output ~ 0
+Text GLabel 2750 1400 2    50   Output ~ 6
 SPI_~SS~_3v3
 $Comp
 L Device:R R?
@@ -446,286 +343,91 @@ F 3 "~" H 1550 3150 50  0001 C CNN
 	1    1550 3150
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5F62FB69
-P 1950 3150
-AR Path="/5F62FB69" Ref="R?"  Part="1" 
-AR Path="/5F396FD6/5F62FB69" Ref="R?"  Part="1" 
-AR Path="/5F70696F/5F62FB69" Ref="R?"  Part="1" 
-F 0 "R?" V 1850 3150 50  0000 C CNN
-F 1 "1k" V 2050 3150 50  0000 C CNN
-F 2 "" V 1880 3150 50  0001 C CNN
-F 3 "~" H 1950 3150 50  0001 C CNN
-	1    1950 3150
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F62FB6F
-P 2200 3150
-AR Path="/5F62FB6F" Ref="#PWR?"  Part="1" 
-AR Path="/5F396FD6/5F62FB6F" Ref="#PWR?"  Part="1" 
-AR Path="/5F70696F/5F62FB6F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2200 2900 50  0001 C CNN
-F 1 "GND" V 2205 3022 50  0000 R CNN
-F 2 "" H 2200 3150 50  0001 C CNN
-F 3 "" H 2200 3150 50  0001 C CNN
-	1    2200 3150
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1300 3150 1400 3150
-Text GLabel 1300 3150 0    50   Input ~ 0
+Text GLabel 1300 3150 0    50   Input ~ 6
 DISPLAY_~RST~
-Wire Wire Line
-	1700 3150 1750 3150
-Wire Wire Line
-	2100 3150 2200 3150
-Wire Wire Line
-	1750 3150 1750 3350
-Connection ~ 1750 3150
-Wire Wire Line
-	1750 3150 1800 3150
-Wire Wire Line
-	1750 3350 1950 3350
-Text GLabel 1950 3350 2    50   Output ~ 0
+Text GLabel 2750 3150 2    50   Output ~ 6
 DISPLAY_~RST~_3v3
 $Comp
 L Device:R R?
 U 1 1 5F62FB7E
-P 1600 3600
+P 1550 3600
 AR Path="/5F62FB7E" Ref="R?"  Part="1" 
 AR Path="/5F396FD6/5F62FB7E" Ref="R?"  Part="1" 
 AR Path="/5F70696F/5F62FB7E" Ref="R?"  Part="1" 
-F 0 "R?" V 1700 3550 50  0000 L CNN
-F 1 "500" V 1500 3550 50  0000 L CNN
-F 2 "" V 1530 3600 50  0001 C CNN
-F 3 "~" H 1600 3600 50  0001 C CNN
-	1    1600 3600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F62FB84
-P 2000 3600
-AR Path="/5F62FB84" Ref="R?"  Part="1" 
-AR Path="/5F396FD6/5F62FB84" Ref="R?"  Part="1" 
-AR Path="/5F70696F/5F62FB84" Ref="R?"  Part="1" 
-F 0 "R?" V 1900 3600 50  0000 C CNN
-F 1 "1k" V 2100 3600 50  0000 C CNN
-F 2 "" V 1930 3600 50  0001 C CNN
-F 3 "~" H 2000 3600 50  0001 C CNN
-	1    2000 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F62FB8A
-P 2250 3600
-AR Path="/5F62FB8A" Ref="#PWR?"  Part="1" 
-AR Path="/5F396FD6/5F62FB8A" Ref="#PWR?"  Part="1" 
-AR Path="/5F70696F/5F62FB8A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2250 3350 50  0001 C CNN
-F 1 "GND" V 2255 3472 50  0000 R CNN
-F 2 "" H 2250 3600 50  0001 C CNN
-F 3 "" H 2250 3600 50  0001 C CNN
-	1    2250 3600
+F 0 "R?" V 1650 3550 50  0000 L CNN
+F 1 "500" V 1450 3550 50  0000 L CNN
+F 2 "" V 1480 3600 50  0001 C CNN
+F 3 "~" H 1550 3600 50  0001 C CNN
+	1    1550 3600
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1350 3600 1450 3600
-Text GLabel 1350 3600 0    50   Input ~ 0
+	1350 3600 1400 3600
+Text GLabel 1350 3600 0    50   Input ~ 6
 DISPLAY_SEL_1
-Wire Wire Line
-	1750 3600 1800 3600
-Wire Wire Line
-	2150 3600 2250 3600
-Wire Wire Line
-	1800 3600 1800 3800
-Connection ~ 1800 3600
-Wire Wire Line
-	1800 3600 1850 3600
-Wire Wire Line
-	1800 3800 2000 3800
 $Comp
 L Device:R R?
 U 1 1 5F62FB98
-P 1600 4000
+P 1550 4000
 AR Path="/5F62FB98" Ref="R?"  Part="1" 
 AR Path="/5F396FD6/5F62FB98" Ref="R?"  Part="1" 
 AR Path="/5F70696F/5F62FB98" Ref="R?"  Part="1" 
-F 0 "R?" V 1700 3950 50  0000 L CNN
-F 1 "500" V 1500 3950 50  0000 L CNN
-F 2 "" V 1530 4000 50  0001 C CNN
-F 3 "~" H 1600 4000 50  0001 C CNN
-	1    1600 4000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F62FB9E
-P 2000 4000
-AR Path="/5F62FB9E" Ref="R?"  Part="1" 
-AR Path="/5F396FD6/5F62FB9E" Ref="R?"  Part="1" 
-AR Path="/5F70696F/5F62FB9E" Ref="R?"  Part="1" 
-F 0 "R?" V 1900 4000 50  0000 C CNN
-F 1 "1k" V 2100 4000 50  0000 C CNN
-F 2 "" V 1930 4000 50  0001 C CNN
-F 3 "~" H 2000 4000 50  0001 C CNN
-	1    2000 4000
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F62FBA4
-P 2250 4000
-AR Path="/5F62FBA4" Ref="#PWR?"  Part="1" 
-AR Path="/5F396FD6/5F62FBA4" Ref="#PWR?"  Part="1" 
-AR Path="/5F70696F/5F62FBA4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2250 3750 50  0001 C CNN
-F 1 "GND" V 2255 3872 50  0000 R CNN
-F 2 "" H 2250 4000 50  0001 C CNN
-F 3 "" H 2250 4000 50  0001 C CNN
-	1    2250 4000
+F 0 "R?" V 1650 3950 50  0000 L CNN
+F 1 "500" V 1450 3950 50  0000 L CNN
+F 2 "" V 1480 4000 50  0001 C CNN
+F 3 "~" H 1550 4000 50  0001 C CNN
+	1    1550 4000
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1350 4000 1450 4000
-Text GLabel 1350 4000 0    50   Input ~ 0
+	1350 4000 1400 4000
+Text GLabel 1350 4000 0    50   Input ~ 6
 DISPLAY_SEL_2
-Wire Wire Line
-	1750 4000 1800 4000
-Wire Wire Line
-	2150 4000 2250 4000
-Wire Wire Line
-	1800 4000 1800 4200
-Connection ~ 1800 4000
-Wire Wire Line
-	1800 4000 1850 4000
-Wire Wire Line
-	1800 4200 2000 4200
 $Comp
 L Device:R R?
 U 1 1 5F62FBB2
-P 1600 4400
+P 1550 4400
 AR Path="/5F62FBB2" Ref="R?"  Part="1" 
 AR Path="/5F396FD6/5F62FBB2" Ref="R?"  Part="1" 
 AR Path="/5F70696F/5F62FBB2" Ref="R?"  Part="1" 
-F 0 "R?" V 1700 4350 50  0000 L CNN
-F 1 "500" V 1500 4350 50  0000 L CNN
-F 2 "" V 1530 4400 50  0001 C CNN
-F 3 "~" H 1600 4400 50  0001 C CNN
-	1    1600 4400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F62FBB8
-P 2000 4400
-AR Path="/5F62FBB8" Ref="R?"  Part="1" 
-AR Path="/5F396FD6/5F62FBB8" Ref="R?"  Part="1" 
-AR Path="/5F70696F/5F62FBB8" Ref="R?"  Part="1" 
-F 0 "R?" V 1900 4400 50  0000 C CNN
-F 1 "1k" V 2100 4400 50  0000 C CNN
-F 2 "" V 1930 4400 50  0001 C CNN
-F 3 "~" H 2000 4400 50  0001 C CNN
-	1    2000 4400
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F62FBBE
-P 2250 4400
-AR Path="/5F62FBBE" Ref="#PWR?"  Part="1" 
-AR Path="/5F396FD6/5F62FBBE" Ref="#PWR?"  Part="1" 
-AR Path="/5F70696F/5F62FBBE" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2250 4150 50  0001 C CNN
-F 1 "GND" V 2255 4272 50  0000 R CNN
-F 2 "" H 2250 4400 50  0001 C CNN
-F 3 "" H 2250 4400 50  0001 C CNN
-	1    2250 4400
+F 0 "R?" V 1650 4350 50  0000 L CNN
+F 1 "500" V 1450 4350 50  0000 L CNN
+F 2 "" V 1480 4400 50  0001 C CNN
+F 3 "~" H 1550 4400 50  0001 C CNN
+	1    1550 4400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1350 4400 1450 4400
-Text GLabel 1350 4400 0    50   Input ~ 0
+	1350 4400 1400 4400
+Text GLabel 1350 4400 0    50   Input ~ 6
 DISPLAY_SEL_3
-Wire Wire Line
-	1750 4400 1800 4400
-Wire Wire Line
-	2150 4400 2250 4400
-Wire Wire Line
-	1800 4400 1800 4600
-Connection ~ 1800 4400
-Wire Wire Line
-	1800 4400 1850 4400
-Wire Wire Line
-	1800 4600 2000 4600
 $Comp
 L Device:R R?
 U 1 1 5F62FBCC
-P 1600 4800
+P 1550 4800
 AR Path="/5F62FBCC" Ref="R?"  Part="1" 
 AR Path="/5F396FD6/5F62FBCC" Ref="R?"  Part="1" 
 AR Path="/5F70696F/5F62FBCC" Ref="R?"  Part="1" 
-F 0 "R?" V 1700 4750 50  0000 L CNN
-F 1 "500" V 1500 4750 50  0000 L CNN
-F 2 "" V 1530 4800 50  0001 C CNN
-F 3 "~" H 1600 4800 50  0001 C CNN
-	1    1600 4800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5F62FBD2
-P 2000 4800
-AR Path="/5F62FBD2" Ref="R?"  Part="1" 
-AR Path="/5F396FD6/5F62FBD2" Ref="R?"  Part="1" 
-AR Path="/5F70696F/5F62FBD2" Ref="R?"  Part="1" 
-F 0 "R?" V 1900 4800 50  0000 C CNN
-F 1 "1k" V 2100 4800 50  0000 C CNN
-F 2 "" V 1930 4800 50  0001 C CNN
-F 3 "~" H 2000 4800 50  0001 C CNN
-	1    2000 4800
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F62FBD8
-P 2250 4800
-AR Path="/5F62FBD8" Ref="#PWR?"  Part="1" 
-AR Path="/5F396FD6/5F62FBD8" Ref="#PWR?"  Part="1" 
-AR Path="/5F70696F/5F62FBD8" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2250 4550 50  0001 C CNN
-F 1 "GND" V 2255 4672 50  0000 R CNN
-F 2 "" H 2250 4800 50  0001 C CNN
-F 3 "" H 2250 4800 50  0001 C CNN
-	1    2250 4800
+F 0 "R?" V 1650 4750 50  0000 L CNN
+F 1 "500" V 1450 4750 50  0000 L CNN
+F 2 "" V 1480 4800 50  0001 C CNN
+F 3 "~" H 1550 4800 50  0001 C CNN
+	1    1550 4800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1350 4800 1450 4800
-Text GLabel 1350 4800 0    50   Input ~ 0
+	1350 4800 1400 4800
+Text GLabel 1350 4800 0    50   Input ~ 6
 DISPLAY_SEL_4
-Wire Wire Line
-	1750 4800 1800 4800
-Wire Wire Line
-	2150 4800 2250 4800
-Wire Wire Line
-	1800 4800 1800 5000
-Connection ~ 1800 4800
-Wire Wire Line
-	1800 4800 1850 4800
-Wire Wire Line
-	1800 5000 2000 5000
-Text GLabel 2000 3800 2    50   Output ~ 0
+Text GLabel 2750 3600 2    50   Output ~ 6
 DISPLAY_SEL_1_3v3
-Text GLabel 2000 4200 2    50   Output ~ 0
+Text GLabel 2750 4000 2    50   Output ~ 6
 DISPLAY_SEL_2_3v3
-Text GLabel 2000 4600 2    50   Output ~ 0
+Text GLabel 2750 4400 2    50   Output ~ 6
 DISPLAY_SEL_3_3v3
-Text GLabel 2000 5000 2    50   Output ~ 0
+Text GLabel 2750 4800 2    50   Output ~ 6
 DISPLAY_SEL_4_3v3
 Wire Wire Line
 	4750 2300 5450 2300
@@ -734,4 +436,73 @@ Wire Wire Line
 Wire Wire Line
 	5050 2000 4750 2000
 Connection ~ 5050 2850
+$Comp
+L Device:R_Network10 RN?
+U 1 1 608E4AAA
+P 2050 5700
+F 0 "RN?" H 1470 5654 50  0000 R CNN
+F 1 "1k" H 1470 5745 50  0000 R CNN
+F 2 "Resistor_THT:R_Array_SIP11" V 2625 5700 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2050 5700 50  0001 C CNN
+	1    2050 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2550 5900 2550 6200
+Wire Wire Line
+	1700 1400 2550 1400
+Wire Wire Line
+	1700 1850 2450 1850
+Wire Wire Line
+	1700 2300 2350 2300
+Wire Wire Line
+	1700 3150 2250 3150
+Wire Wire Line
+	1700 3600 2150 3600
+Wire Wire Line
+	1700 4000 2050 4000
+Wire Wire Line
+	1700 4400 1950 4400
+Wire Wire Line
+	1700 4800 1850 4800
+Wire Wire Line
+	1850 4800 1850 5500
+Connection ~ 1850 4800
+Wire Wire Line
+	1850 4800 2750 4800
+Wire Wire Line
+	1950 5500 1950 4400
+Connection ~ 1950 4400
+Wire Wire Line
+	1950 4400 2750 4400
+Wire Wire Line
+	2050 5500 2050 4000
+Connection ~ 2050 4000
+Wire Wire Line
+	2050 4000 2750 4000
+Wire Wire Line
+	2150 5500 2150 3600
+Connection ~ 2150 3600
+Wire Wire Line
+	2150 3600 2750 3600
+Wire Wire Line
+	2250 5500 2250 3150
+Connection ~ 2250 3150
+Wire Wire Line
+	2250 3150 2750 3150
+Wire Wire Line
+	2350 5500 2350 2300
+Connection ~ 2350 2300
+Wire Wire Line
+	2350 2300 2750 2300
+Wire Wire Line
+	2450 5500 2450 1850
+Connection ~ 2450 1850
+Wire Wire Line
+	2450 1850 2750 1850
+Wire Wire Line
+	2550 5500 2550 1400
+Connection ~ 2550 1400
+Wire Wire Line
+	2550 1400 2750 1400
 $EndSCHEMATC
