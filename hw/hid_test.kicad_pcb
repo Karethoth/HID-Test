@@ -34,13 +34,18 @@
   )
 
   (setup
-    (last_trace_width 0.25)
+    (last_trace_width 0.4)
+    (user_trace_width 0.3)
+    (user_trace_width 0.4)
+    (user_trace_width 0.8)
+    (user_trace_width 1.6)
+    (user_trace_width 3.2)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
     (zone_45_only no)
     (trace_min 0.2)
-    (via_size 0.8)
-    (via_drill 0.4)
+    (via_size 0.4)
+    (via_drill 0.3)
     (via_min_size 0.4)
     (via_min_drill 0.3)
     (uvia_size 0.3)
@@ -218,9 +223,9 @@
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
-    (trace_width 0.25)
-    (via_dia 0.8)
-    (via_drill 0.4)
+    (trace_width 0.2)
+    (via_dia 0.4)
+    (via_drill 0.3)
     (uvia_dia 0.3)
     (uvia_drill 0.1)
     (add_net +3V3)
@@ -2710,7 +2715,7 @@
   )
 
   (module Button_Switch_THT:SW_PUSH_6mm (layer F.Cu) (tedit 5A02FE31) (tstamp 5E6D145B)
-    (at 60.325 109.855 90)
+    (at 60.96 109.855 90)
     (descr https://www.omron.com/ecb/products/pdf/en-b3f.pdf)
     (tags "tact sw push 6mm")
     (path /5E663A43)
@@ -3171,7 +3176,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 5E6C61C3)
-    (at 81.28 162.56)
+    (at 90.17 162.56 180)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (path /5F97ABD2)
@@ -3200,9 +3205,9 @@
     (fp_line (start 6.96 1.25) (end 6.96 -1.25) (layer F.Fab) (width 0.1))
     (fp_line (start 0.66 1.25) (end 6.96 1.25) (layer F.Fab) (width 0.1))
     (fp_line (start 0.66 -1.25) (end 0.66 1.25) (layer F.Fab) (width 0.1))
-    (pad 2 thru_hole oval (at 7.62 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 2 thru_hole oval (at 7.62 0 180) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 88 TWI_SCL))
-    (pad 1 thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 1 thru_hole circle (at 0 0 180) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 75 +5V))
     (model ${KISYS3DMOD}/Resistor_THT.3dshapes/R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal.wrl
       (at (xyz 0 0 0))
@@ -4139,7 +4144,7 @@
   )
 
   (module Capacitor_THT:C_Rect_L4.6mm_W3.0mm_P2.50mm_MKS02_FKP02 (layer F.Cu) (tedit 5AE50EF0) (tstamp 5E6BA20F)
-    (at 57.15 116.84 270)
+    (at 58.42 116.84 270)
     (descr "C, Rect series, Radial, pin pitch=2.50mm, , length*width=4.6*3.0mm^2, Capacitor, http://www.wima.de/DE/WIMA_MKS_02.pdf")
     (tags "C Rect series Radial pin pitch 2.50mm  length 4.6mm width 3.0mm Capacitor")
     (path /5E666692)
@@ -4316,7 +4321,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5E6B825A)
-    (at 63.5 118.745 180)
+    (at 65.405 118.745 180)
     (descr "Through hole straight pin header, 2x03, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x03 2.54mm double row")
     (path /5E8073C7)
