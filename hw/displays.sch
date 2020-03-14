@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:hid_test-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -501,4 +500,8 @@ Text GLabel 2750 4800 2    50   Output ~ 10
 DISPLAY_SEL_4_3v3
 Text GLabel 2750 4400 2    50   Output ~ 10
 DISPLAY_SEL_3_3v3
+Wire Wire Line
+	5050 2850 5050 3900
+Connection ~ 5050 2850
+Connection ~ 5050 3900
 $EndSCHEMATC
