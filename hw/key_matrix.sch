@@ -41,9 +41,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE8104A
 P 6250 4150
 AR Path="/5EE8104A" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE8104A" Ref="SW29"  Part="1" 
+AR Path="/5EE5B30C/5EE8104A" Ref="SW_37"  Part="1" 
 AR Path="/5FA6AA33/5EE8104A" Ref="SW?"  Part="1" 
-F 0 "SW29" V 6204 4298 50  0000 L CNN
+F 0 "SW_37" V 6204 4298 50  0000 L CNN
 F 1 "Btn" V 6295 4298 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 6250 4350 50  0001 C CNN
 F 3 "~" H 6250 4350 50  0001 C CNN
@@ -59,7 +59,7 @@ AR Path="/5EE5B30C/5EE81050" Ref="D31"  Part="1"
 AR Path="/5FA6AA33/5EE81050" Ref="D?"  Part="1" 
 F 0 "D31" V 6296 4421 50  0000 R CNN
 F 1 "1N4153" V 6205 4421 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6250 4325 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 6250 4325 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 6250 4500 50  0001 C CNN
 	1    6250 4500
 	0    -1   -1   0   
@@ -69,9 +69,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE81056
 P 5700 4150
 AR Path="/5EE81056" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE81056" Ref="SW25"  Part="1" 
+AR Path="/5EE5B30C/5EE81056" Ref="SW_36"  Part="1" 
 AR Path="/5FA6AA33/5EE81056" Ref="SW?"  Part="1" 
-F 0 "SW25" V 5654 4298 50  0000 L CNN
+F 0 "SW_36" V 5654 4298 50  0000 L CNN
 F 1 "Btn" V 5745 4298 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5700 4350 50  0001 C CNN
 F 3 "~" H 5700 4350 50  0001 C CNN
@@ -87,7 +87,7 @@ AR Path="/5EE5B30C/5EE8105C" Ref="D27"  Part="1"
 AR Path="/5FA6AA33/5EE8105C" Ref="D?"  Part="1" 
 F 0 "D27" V 5746 4421 50  0000 R CNN
 F 1 "1N4153" V 5655 4421 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5700 4325 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 5700 4325 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 5700 4500 50  0001 C CNN
 	1    5700 4500
 	0    -1   -1   0   
@@ -97,9 +97,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE81062
 P 2400 4150
 AR Path="/5EE81062" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE81062" Ref="SW9"  Part="1" 
+AR Path="/5EE5B30C/5EE81062" Ref="SW_17"  Part="1" 
 AR Path="/5FA6AA33/5EE81062" Ref="SW?"  Part="1" 
-F 0 "SW9" V 2354 4298 50  0000 L CNN
+F 0 "SW_17" V 2354 4298 50  0000 L CNN
 F 1 "Btn" V 2445 4298 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2400 4350 50  0001 C CNN
 F 3 "~" H 2400 4350 50  0001 C CNN
@@ -115,7 +115,7 @@ AR Path="/5EE5B30C/5EE81068" Ref="D11"  Part="1"
 AR Path="/5FA6AA33/5EE81068" Ref="D?"  Part="1" 
 F 0 "D11" V 2446 4421 50  0000 R CNN
 F 1 "1N4153" V 2355 4421 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2400 4325 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 2400 4325 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 2400 4500 50  0001 C CNN
 	1    2400 4500
 	0    -1   -1   0   
@@ -125,9 +125,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE8106E
 P 1850 4150
 AR Path="/5EE8106E" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE8106E" Ref="SW5"  Part="1" 
+AR Path="/5EE5B30C/5EE8106E" Ref="SW_16"  Part="1" 
 AR Path="/5FA6AA33/5EE8106E" Ref="SW?"  Part="1" 
-F 0 "SW5" V 1804 4298 50  0000 L CNN
+F 0 "SW_16" V 1804 4298 50  0000 L CNN
 F 1 "Btn" V 1895 4298 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 1850 4350 50  0001 C CNN
 F 3 "~" H 1850 4350 50  0001 C CNN
@@ -143,7 +143,7 @@ AR Path="/5EE5B30C/5EE81074" Ref="D7"  Part="1"
 AR Path="/5FA6AA33/5EE81074" Ref="D?"  Part="1" 
 F 0 "D7" V 1896 4421 50  0000 R CNN
 F 1 "1N4153" V 1805 4421 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1850 4325 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 1850 4325 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 1850 4500 50  0001 C CNN
 	1    1850 4500
 	0    -1   -1   0   
@@ -184,9 +184,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE8108E
 P 6250 3300
 AR Path="/5EE8108E" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE8108E" Ref="SW28"  Part="1" 
+AR Path="/5EE5B30C/5EE8108E" Ref="SW_32"  Part="1" 
 AR Path="/5FA6AA33/5EE8108E" Ref="SW?"  Part="1" 
-F 0 "SW28" V 6204 3448 50  0000 L CNN
+F 0 "SW_32" V 6204 3448 50  0000 L CNN
 F 1 "Btn" V 6295 3448 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 6250 3500 50  0001 C CNN
 F 3 "~" H 6250 3500 50  0001 C CNN
@@ -202,7 +202,7 @@ AR Path="/5EE5B30C/5EE81094" Ref="D30"  Part="1"
 AR Path="/5FA6AA33/5EE81094" Ref="D?"  Part="1" 
 F 0 "D30" V 6296 3571 50  0000 R CNN
 F 1 "1N4153" V 6205 3571 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6250 3475 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 6250 3475 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 6250 3650 50  0001 C CNN
 	1    6250 3650
 	0    -1   -1   0   
@@ -217,9 +217,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE8109F
 P 5700 3300
 AR Path="/5EE8109F" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE8109F" Ref="SW24"  Part="1" 
+AR Path="/5EE5B30C/5EE8109F" Ref="SW_31"  Part="1" 
 AR Path="/5FA6AA33/5EE8109F" Ref="SW?"  Part="1" 
-F 0 "SW24" V 5654 3448 50  0000 L CNN
+F 0 "SW_31" V 5654 3448 50  0000 L CNN
 F 1 "Btn" V 5745 3448 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5700 3500 50  0001 C CNN
 F 3 "~" H 5700 3500 50  0001 C CNN
@@ -235,7 +235,7 @@ AR Path="/5EE5B30C/5EE810A5" Ref="D26"  Part="1"
 AR Path="/5FA6AA33/5EE810A5" Ref="D?"  Part="1" 
 F 0 "D26" V 5746 3571 50  0000 R CNN
 F 1 "1N4153" V 5655 3571 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5700 3475 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 5700 3475 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 5700 3650 50  0001 C CNN
 	1    5700 3650
 	0    -1   -1   0   
@@ -245,9 +245,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE810AB
 P 2400 3300
 AR Path="/5EE810AB" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE810AB" Ref="SW8"  Part="1" 
+AR Path="/5EE5B30C/5EE810AB" Ref="SW_12"  Part="1" 
 AR Path="/5FA6AA33/5EE810AB" Ref="SW?"  Part="1" 
-F 0 "SW8" V 2354 3448 50  0000 L CNN
+F 0 "SW_12" V 2354 3448 50  0000 L CNN
 F 1 "Btn" V 2445 3448 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2400 3500 50  0001 C CNN
 F 3 "~" H 2400 3500 50  0001 C CNN
@@ -263,7 +263,7 @@ AR Path="/5EE5B30C/5EE810B1" Ref="D10"  Part="1"
 AR Path="/5FA6AA33/5EE810B1" Ref="D?"  Part="1" 
 F 0 "D10" V 2446 3571 50  0000 R CNN
 F 1 "1N4153" V 2355 3571 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2400 3475 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 2400 3475 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 2400 3650 50  0001 C CNN
 	1    2400 3650
 	0    -1   -1   0   
@@ -273,9 +273,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE810B7
 P 1850 3300
 AR Path="/5EE810B7" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE810B7" Ref="SW4"  Part="1" 
+AR Path="/5EE5B30C/5EE810B7" Ref="SW_11"  Part="1" 
 AR Path="/5FA6AA33/5EE810B7" Ref="SW?"  Part="1" 
-F 0 "SW4" V 1804 3448 50  0000 L CNN
+F 0 "SW_11" V 1804 3448 50  0000 L CNN
 F 1 "Btn" V 1895 3448 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 1850 3500 50  0001 C CNN
 F 3 "~" H 1850 3500 50  0001 C CNN
@@ -291,7 +291,7 @@ AR Path="/5EE5B30C/5EE810BD" Ref="D6"  Part="1"
 AR Path="/5FA6AA33/5EE810BD" Ref="D?"  Part="1" 
 F 0 "D6" V 1896 3571 50  0000 R CNN
 F 1 "1N4153" V 1805 3571 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1850 3475 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 1850 3475 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 1850 3650 50  0001 C CNN
 	1    1850 3650
 	0    -1   -1   0   
@@ -310,9 +310,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE810C9
 P 6250 2450
 AR Path="/5EE810C9" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE810C9" Ref="SW27"  Part="1" 
+AR Path="/5EE5B30C/5EE810C9" Ref="SW_27"  Part="1" 
 AR Path="/5FA6AA33/5EE810C9" Ref="SW?"  Part="1" 
-F 0 "SW27" V 6204 2598 50  0000 L CNN
+F 0 "SW_27" V 6204 2598 50  0000 L CNN
 F 1 "Btn" V 6295 2598 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 6250 2650 50  0001 C CNN
 F 3 "~" H 6250 2650 50  0001 C CNN
@@ -328,7 +328,7 @@ AR Path="/5EE5B30C/5EE810CF" Ref="D29"  Part="1"
 AR Path="/5FA6AA33/5EE810CF" Ref="D?"  Part="1" 
 F 0 "D29" V 6296 2721 50  0000 R CNN
 F 1 "1N4153" V 6205 2721 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6250 2625 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 6250 2625 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 6250 2800 50  0001 C CNN
 	1    6250 2800
 	0    -1   -1   0   
@@ -343,9 +343,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE810DA
 P 5700 2450
 AR Path="/5EE810DA" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE810DA" Ref="SW23"  Part="1" 
+AR Path="/5EE5B30C/5EE810DA" Ref="SW_26"  Part="1" 
 AR Path="/5FA6AA33/5EE810DA" Ref="SW?"  Part="1" 
-F 0 "SW23" V 5654 2598 50  0000 L CNN
+F 0 "SW_26" V 5654 2598 50  0000 L CNN
 F 1 "Btn" V 5745 2598 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5700 2650 50  0001 C CNN
 F 3 "~" H 5700 2650 50  0001 C CNN
@@ -361,7 +361,7 @@ AR Path="/5EE5B30C/5EE810E0" Ref="D25"  Part="1"
 AR Path="/5FA6AA33/5EE810E0" Ref="D?"  Part="1" 
 F 0 "D25" V 5746 2721 50  0000 R CNN
 F 1 "1N4153" V 5655 2721 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5700 2625 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 5700 2625 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 5700 2800 50  0001 C CNN
 	1    5700 2800
 	0    -1   -1   0   
@@ -371,9 +371,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE810E6
 P 2400 2450
 AR Path="/5EE810E6" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE810E6" Ref="SW7"  Part="1" 
+AR Path="/5EE5B30C/5EE810E6" Ref="SW_7"  Part="1" 
 AR Path="/5FA6AA33/5EE810E6" Ref="SW?"  Part="1" 
-F 0 "SW7" V 2354 2598 50  0000 L CNN
+F 0 "SW_7" V 2354 2598 50  0000 L CNN
 F 1 "Btn" V 2445 2598 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2400 2650 50  0001 C CNN
 F 3 "~" H 2400 2650 50  0001 C CNN
@@ -389,7 +389,7 @@ AR Path="/5EE5B30C/5EE810EC" Ref="D9"  Part="1"
 AR Path="/5FA6AA33/5EE810EC" Ref="D?"  Part="1" 
 F 0 "D9" V 2446 2721 50  0000 R CNN
 F 1 "1N4153" V 2355 2721 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2400 2625 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 2400 2625 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 2400 2800 50  0001 C CNN
 	1    2400 2800
 	0    -1   -1   0   
@@ -399,9 +399,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE810F2
 P 1850 2450
 AR Path="/5EE810F2" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE810F2" Ref="SW3"  Part="1" 
+AR Path="/5EE5B30C/5EE810F2" Ref="SW_6"  Part="1" 
 AR Path="/5FA6AA33/5EE810F2" Ref="SW?"  Part="1" 
-F 0 "SW3" V 1804 2598 50  0000 L CNN
+F 0 "SW_6" V 1804 2598 50  0000 L CNN
 F 1 "Btn" V 1895 2598 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 1850 2650 50  0001 C CNN
 F 3 "~" H 1850 2650 50  0001 C CNN
@@ -417,7 +417,7 @@ AR Path="/5EE5B30C/5EE810F8" Ref="D5"  Part="1"
 AR Path="/5FA6AA33/5EE810F8" Ref="D?"  Part="1" 
 F 0 "D5" V 1896 2721 50  0000 R CNN
 F 1 "1N4153" V 1805 2721 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1850 2625 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 1850 2625 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 1850 2800 50  0001 C CNN
 	1    1850 2800
 	0    -1   -1   0   
@@ -431,9 +431,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE81101
 P 6250 1600
 AR Path="/5EE81101" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE81101" Ref="SW26"  Part="1" 
+AR Path="/5EE5B30C/5EE81101" Ref="SW_22"  Part="1" 
 AR Path="/5FA6AA33/5EE81101" Ref="SW?"  Part="1" 
-F 0 "SW26" V 6204 1748 50  0000 L CNN
+F 0 "SW_22" V 6204 1748 50  0000 L CNN
 F 1 "Btn" V 6295 1748 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 6250 1800 50  0001 C CNN
 F 3 "~" H 6250 1800 50  0001 C CNN
@@ -449,7 +449,7 @@ AR Path="/5EE5B30C/5EE81107" Ref="D28"  Part="1"
 AR Path="/5FA6AA33/5EE81107" Ref="D?"  Part="1" 
 F 0 "D28" V 6296 1871 50  0000 R CNN
 F 1 "1N4153" V 6205 1871 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6250 1775 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 6250 1775 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 6250 1950 50  0001 C CNN
 	1    6250 1950
 	0    -1   -1   0   
@@ -468,9 +468,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE81114
 P 5700 1600
 AR Path="/5EE81114" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE81114" Ref="SW22"  Part="1" 
+AR Path="/5EE5B30C/5EE81114" Ref="SW_21"  Part="1" 
 AR Path="/5FA6AA33/5EE81114" Ref="SW?"  Part="1" 
-F 0 "SW22" V 5654 1748 50  0000 L CNN
+F 0 "SW_21" V 5654 1748 50  0000 L CNN
 F 1 "Btn" V 5745 1748 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5700 1800 50  0001 C CNN
 F 3 "~" H 5700 1800 50  0001 C CNN
@@ -486,7 +486,7 @@ AR Path="/5EE5B30C/5EE8111A" Ref="D24"  Part="1"
 AR Path="/5FA6AA33/5EE8111A" Ref="D?"  Part="1" 
 F 0 "D24" V 5746 1871 50  0000 R CNN
 F 1 "1N4153" V 5655 1871 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5700 1775 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 5700 1775 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 5700 1950 50  0001 C CNN
 	1    5700 1950
 	0    -1   -1   0   
@@ -496,9 +496,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE81120
 P 2400 1600
 AR Path="/5EE81120" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE81120" Ref="SW6"  Part="1" 
+AR Path="/5EE5B30C/5EE81120" Ref="SW_2"  Part="1" 
 AR Path="/5FA6AA33/5EE81120" Ref="SW?"  Part="1" 
-F 0 "SW6" V 2354 1748 50  0000 L CNN
+F 0 "SW_2" V 2354 1748 50  0000 L CNN
 F 1 "Btn" V 2445 1748 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2400 1800 50  0001 C CNN
 F 3 "~" H 2400 1800 50  0001 C CNN
@@ -514,7 +514,7 @@ AR Path="/5EE5B30C/5EE81126" Ref="D8"  Part="1"
 AR Path="/5FA6AA33/5EE81126" Ref="D?"  Part="1" 
 F 0 "D8" V 2446 1871 50  0000 R CNN
 F 1 "1N4153" V 2355 1871 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2400 1775 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 2400 1775 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 2400 1950 50  0001 C CNN
 	1    2400 1950
 	0    -1   -1   0   
@@ -524,9 +524,9 @@ L Switch:SW_Push SW?
 U 1 1 5EE8112C
 P 1850 1600
 AR Path="/5EE8112C" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5EE8112C" Ref="SW2"  Part="1" 
+AR Path="/5EE5B30C/5EE8112C" Ref="SW_1"  Part="1" 
 AR Path="/5FA6AA33/5EE8112C" Ref="SW?"  Part="1" 
-F 0 "SW2" V 1804 1748 50  0000 L CNN
+F 0 "SW_1" V 1804 1748 50  0000 L CNN
 F 1 "Btn" V 1895 1748 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 1850 1800 50  0001 C CNN
 F 3 "~" H 1850 1800 50  0001 C CNN
@@ -542,7 +542,7 @@ AR Path="/5EE5B30C/5EE81132" Ref="D4"  Part="1"
 AR Path="/5FA6AA33/5EE81132" Ref="D?"  Part="1" 
 F 0 "D4" V 1896 1871 50  0000 R CNN
 F 1 "1N4153" V 1805 1871 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 1850 1775 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 1850 1775 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 1850 1950 50  0001 C CNN
 	1    1850 1950
 	0    -1   -1   0   
@@ -625,9 +625,9 @@ L Switch:SW_Push SW?
 U 1 1 5FC66092
 P 2950 4150
 AR Path="/5FC66092" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FC66092" Ref="SW13"  Part="1" 
+AR Path="/5EE5B30C/5FC66092" Ref="SW_18"  Part="1" 
 AR Path="/5FA6AA33/5FC66092" Ref="SW?"  Part="1" 
-F 0 "SW13" V 2904 4298 50  0000 L CNN
+F 0 "SW_18" V 2904 4298 50  0000 L CNN
 F 1 "Btn" V 2995 4298 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2950 4350 50  0001 C CNN
 F 3 "~" H 2950 4350 50  0001 C CNN
@@ -643,7 +643,7 @@ AR Path="/5EE5B30C/5FC66098" Ref="D15"  Part="1"
 AR Path="/5FA6AA33/5FC66098" Ref="D?"  Part="1" 
 F 0 "D15" V 2996 4421 50  0000 R CNN
 F 1 "1N4153" V 2905 4421 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2950 4325 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 2950 4325 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 2950 4500 50  0001 C CNN
 	1    2950 4500
 	0    -1   -1   0   
@@ -661,9 +661,9 @@ L Switch:SW_Push SW?
 U 1 1 5FC660A3
 P 2950 3300
 AR Path="/5FC660A3" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FC660A3" Ref="SW12"  Part="1" 
+AR Path="/5EE5B30C/5FC660A3" Ref="SW_13"  Part="1" 
 AR Path="/5FA6AA33/5FC660A3" Ref="SW?"  Part="1" 
-F 0 "SW12" V 2904 3448 50  0000 L CNN
+F 0 "SW_13" V 2904 3448 50  0000 L CNN
 F 1 "Btn" V 2995 3448 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2950 3500 50  0001 C CNN
 F 3 "~" H 2950 3500 50  0001 C CNN
@@ -679,7 +679,7 @@ AR Path="/5EE5B30C/5FC660A9" Ref="D14"  Part="1"
 AR Path="/5FA6AA33/5FC660A9" Ref="D?"  Part="1" 
 F 0 "D14" V 2996 3571 50  0000 R CNN
 F 1 "1N4153" V 2905 3571 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2950 3475 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 2950 3475 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 2950 3650 50  0001 C CNN
 	1    2950 3650
 	0    -1   -1   0   
@@ -695,9 +695,9 @@ L Switch:SW_Push SW?
 U 1 1 5FC660B2
 P 2950 2450
 AR Path="/5FC660B2" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FC660B2" Ref="SW11"  Part="1" 
+AR Path="/5EE5B30C/5FC660B2" Ref="SW_8"  Part="1" 
 AR Path="/5FA6AA33/5FC660B2" Ref="SW?"  Part="1" 
-F 0 "SW11" V 2904 2598 50  0000 L CNN
+F 0 "SW_8" V 2904 2598 50  0000 L CNN
 F 1 "Btn" V 2995 2598 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2950 2650 50  0001 C CNN
 F 3 "~" H 2950 2650 50  0001 C CNN
@@ -713,7 +713,7 @@ AR Path="/5EE5B30C/5FC660B8" Ref="D13"  Part="1"
 AR Path="/5FA6AA33/5FC660B8" Ref="D?"  Part="1" 
 F 0 "D13" V 2996 2721 50  0000 R CNN
 F 1 "1N4153" V 2905 2721 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2950 2625 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 2950 2625 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 2950 2800 50  0001 C CNN
 	1    2950 2800
 	0    -1   -1   0   
@@ -727,9 +727,9 @@ L Switch:SW_Push SW?
 U 1 1 5FC660C0
 P 2950 1600
 AR Path="/5FC660C0" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FC660C0" Ref="SW10"  Part="1" 
+AR Path="/5EE5B30C/5FC660C0" Ref="SW_3"  Part="1" 
 AR Path="/5FA6AA33/5FC660C0" Ref="SW?"  Part="1" 
-F 0 "SW10" V 2904 1748 50  0000 L CNN
+F 0 "SW_3" V 2904 1748 50  0000 L CNN
 F 1 "Btn" V 2995 1748 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 2950 1800 50  0001 C CNN
 F 3 "~" H 2950 1800 50  0001 C CNN
@@ -745,7 +745,7 @@ AR Path="/5EE5B30C/5FC660C6" Ref="D12"  Part="1"
 AR Path="/5FA6AA33/5FC660C6" Ref="D?"  Part="1" 
 F 0 "D12" V 2996 1871 50  0000 R CNN
 F 1 "1N4153" V 2905 1871 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2950 1775 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 2950 1775 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 2950 1950 50  0001 C CNN
 	1    2950 1950
 	0    -1   -1   0   
@@ -769,9 +769,9 @@ L Switch:SW_Push SW?
 U 1 1 5FCDA14E
 P 6800 4150
 AR Path="/5FCDA14E" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FCDA14E" Ref="SW33"  Part="1" 
+AR Path="/5EE5B30C/5FCDA14E" Ref="SW_38"  Part="1" 
 AR Path="/5FA6AA33/5FCDA14E" Ref="SW?"  Part="1" 
-F 0 "SW33" V 6754 4298 50  0000 L CNN
+F 0 "SW_38" V 6754 4298 50  0000 L CNN
 F 1 "Btn" V 6845 4298 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 6800 4350 50  0001 C CNN
 F 3 "~" H 6800 4350 50  0001 C CNN
@@ -787,7 +787,7 @@ AR Path="/5EE5B30C/5FCDA154" Ref="D35"  Part="1"
 AR Path="/5FA6AA33/5FCDA154" Ref="D?"  Part="1" 
 F 0 "D35" V 6846 4421 50  0000 R CNN
 F 1 "1N4153" V 6755 4421 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6800 4325 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 6800 4325 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 6800 4500 50  0001 C CNN
 	1    6800 4500
 	0    -1   -1   0   
@@ -804,9 +804,9 @@ L Switch:SW_Push SW?
 U 1 1 5FCDA15E
 P 6800 3300
 AR Path="/5FCDA15E" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FCDA15E" Ref="SW32"  Part="1" 
+AR Path="/5EE5B30C/5FCDA15E" Ref="SW_33"  Part="1" 
 AR Path="/5FA6AA33/5FCDA15E" Ref="SW?"  Part="1" 
-F 0 "SW32" V 6754 3448 50  0000 L CNN
+F 0 "SW_33" V 6754 3448 50  0000 L CNN
 F 1 "Btn" V 6845 3448 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 6800 3500 50  0001 C CNN
 F 3 "~" H 6800 3500 50  0001 C CNN
@@ -822,7 +822,7 @@ AR Path="/5EE5B30C/5FCDA164" Ref="D34"  Part="1"
 AR Path="/5FA6AA33/5FCDA164" Ref="D?"  Part="1" 
 F 0 "D34" V 6846 3571 50  0000 R CNN
 F 1 "1N4153" V 6755 3571 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6800 3475 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 6800 3475 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 6800 3650 50  0001 C CNN
 	1    6800 3650
 	0    -1   -1   0   
@@ -839,9 +839,9 @@ L Switch:SW_Push SW?
 U 1 1 5FCDA16E
 P 6800 2450
 AR Path="/5FCDA16E" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FCDA16E" Ref="SW31"  Part="1" 
+AR Path="/5EE5B30C/5FCDA16E" Ref="SW_28"  Part="1" 
 AR Path="/5FA6AA33/5FCDA16E" Ref="SW?"  Part="1" 
-F 0 "SW31" V 6754 2598 50  0000 L CNN
+F 0 "SW_28" V 6754 2598 50  0000 L CNN
 F 1 "Btn" V 6845 2598 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 6800 2650 50  0001 C CNN
 F 3 "~" H 6800 2650 50  0001 C CNN
@@ -857,7 +857,7 @@ AR Path="/5EE5B30C/5FCDA174" Ref="D33"  Part="1"
 AR Path="/5FA6AA33/5FCDA174" Ref="D?"  Part="1" 
 F 0 "D33" V 6846 2721 50  0000 R CNN
 F 1 "1N4153" V 6755 2721 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6800 2625 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 6800 2625 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 6800 2800 50  0001 C CNN
 	1    6800 2800
 	0    -1   -1   0   
@@ -871,9 +871,9 @@ L Switch:SW_Push SW?
 U 1 1 5FCDA17C
 P 6800 1600
 AR Path="/5FCDA17C" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FCDA17C" Ref="SW30"  Part="1" 
+AR Path="/5EE5B30C/5FCDA17C" Ref="SW_23"  Part="1" 
 AR Path="/5FA6AA33/5FCDA17C" Ref="SW?"  Part="1" 
-F 0 "SW30" V 6754 1748 50  0000 L CNN
+F 0 "SW_23" V 6754 1748 50  0000 L CNN
 F 1 "Btn" V 6845 1748 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 6800 1800 50  0001 C CNN
 F 3 "~" H 6800 1800 50  0001 C CNN
@@ -889,7 +889,7 @@ AR Path="/5EE5B30C/5FCDA182" Ref="D32"  Part="1"
 AR Path="/5FA6AA33/5FCDA182" Ref="D?"  Part="1" 
 F 0 "D32" V 6846 1871 50  0000 R CNN
 F 1 "1N4153" V 6755 1871 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6800 1775 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 6800 1775 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 6800 1950 50  0001 C CNN
 	1    6800 1950
 	0    -1   -1   0   
@@ -922,9 +922,9 @@ L Switch:SW_Push SW?
 U 1 1 5FD300C4
 P 3500 4150
 AR Path="/5FD300C4" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FD300C4" Ref="SW17"  Part="1" 
+AR Path="/5EE5B30C/5FD300C4" Ref="SW_19"  Part="1" 
 AR Path="/5FA6AA33/5FD300C4" Ref="SW?"  Part="1" 
-F 0 "SW17" V 3454 4298 50  0000 L CNN
+F 0 "SW_19" V 3454 4298 50  0000 L CNN
 F 1 "Btn" V 3545 4298 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3500 4350 50  0001 C CNN
 F 3 "~" H 3500 4350 50  0001 C CNN
@@ -940,7 +940,7 @@ AR Path="/5EE5B30C/5FD300CA" Ref="D19"  Part="1"
 AR Path="/5FA6AA33/5FD300CA" Ref="D?"  Part="1" 
 F 0 "D19" V 3546 4421 50  0000 R CNN
 F 1 "1N4153" V 3455 4421 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3500 4325 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 3500 4325 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 3500 4500 50  0001 C CNN
 	1    3500 4500
 	0    -1   -1   0   
@@ -958,9 +958,9 @@ L Switch:SW_Push SW?
 U 1 1 5FD300D5
 P 3500 3300
 AR Path="/5FD300D5" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FD300D5" Ref="SW16"  Part="1" 
+AR Path="/5EE5B30C/5FD300D5" Ref="SW_14"  Part="1" 
 AR Path="/5FA6AA33/5FD300D5" Ref="SW?"  Part="1" 
-F 0 "SW16" V 3454 3448 50  0000 L CNN
+F 0 "SW_14" V 3454 3448 50  0000 L CNN
 F 1 "Btn" V 3545 3448 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3500 3500 50  0001 C CNN
 F 3 "~" H 3500 3500 50  0001 C CNN
@@ -976,7 +976,7 @@ AR Path="/5EE5B30C/5FD300DB" Ref="D18"  Part="1"
 AR Path="/5FA6AA33/5FD300DB" Ref="D?"  Part="1" 
 F 0 "D18" V 3546 3571 50  0000 R CNN
 F 1 "1N4153" V 3455 3571 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3500 3475 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 3500 3475 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 3500 3650 50  0001 C CNN
 	1    3500 3650
 	0    -1   -1   0   
@@ -992,9 +992,9 @@ L Switch:SW_Push SW?
 U 1 1 5FD300E4
 P 3500 2450
 AR Path="/5FD300E4" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FD300E4" Ref="SW15"  Part="1" 
+AR Path="/5EE5B30C/5FD300E4" Ref="SW_9"  Part="1" 
 AR Path="/5FA6AA33/5FD300E4" Ref="SW?"  Part="1" 
-F 0 "SW15" V 3454 2598 50  0000 L CNN
+F 0 "SW_9" V 3454 2598 50  0000 L CNN
 F 1 "Btn" V 3545 2598 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3500 2650 50  0001 C CNN
 F 3 "~" H 3500 2650 50  0001 C CNN
@@ -1010,7 +1010,7 @@ AR Path="/5EE5B30C/5FD300EA" Ref="D17"  Part="1"
 AR Path="/5FA6AA33/5FD300EA" Ref="D?"  Part="1" 
 F 0 "D17" V 3546 2721 50  0000 R CNN
 F 1 "1N4153" V 3455 2721 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3500 2625 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 3500 2625 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 3500 2800 50  0001 C CNN
 	1    3500 2800
 	0    -1   -1   0   
@@ -1024,9 +1024,9 @@ L Switch:SW_Push SW?
 U 1 1 5FD300F2
 P 3500 1600
 AR Path="/5FD300F2" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FD300F2" Ref="SW14"  Part="1" 
+AR Path="/5EE5B30C/5FD300F2" Ref="SW_4"  Part="1" 
 AR Path="/5FA6AA33/5FD300F2" Ref="SW?"  Part="1" 
-F 0 "SW14" V 3454 1748 50  0000 L CNN
+F 0 "SW_4" V 3454 1748 50  0000 L CNN
 F 1 "Btn" V 3545 1748 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3500 1800 50  0001 C CNN
 F 3 "~" H 3500 1800 50  0001 C CNN
@@ -1042,7 +1042,7 @@ AR Path="/5EE5B30C/5FD300F8" Ref="D16"  Part="1"
 AR Path="/5FA6AA33/5FD300F8" Ref="D?"  Part="1" 
 F 0 "D16" V 3546 1871 50  0000 R CNN
 F 1 "1N4153" V 3455 1871 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3500 1775 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 3500 1775 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 3500 1950 50  0001 C CNN
 	1    3500 1950
 	0    -1   -1   0   
@@ -1060,9 +1060,9 @@ L Switch:SW_Push SW?
 U 1 1 5FD413F8
 P 7350 4150
 AR Path="/5FD413F8" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FD413F8" Ref="SW37"  Part="1" 
+AR Path="/5EE5B30C/5FD413F8" Ref="SW_39"  Part="1" 
 AR Path="/5FA6AA33/5FD413F8" Ref="SW?"  Part="1" 
-F 0 "SW37" V 7304 4298 50  0000 L CNN
+F 0 "SW_39" V 7304 4298 50  0000 L CNN
 F 1 "Btn" V 7395 4298 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 7350 4350 50  0001 C CNN
 F 3 "~" H 7350 4350 50  0001 C CNN
@@ -1078,7 +1078,7 @@ AR Path="/5EE5B30C/5FD413FE" Ref="D39"  Part="1"
 AR Path="/5FA6AA33/5FD413FE" Ref="D?"  Part="1" 
 F 0 "D39" V 7396 4421 50  0000 R CNN
 F 1 "1N4153" V 7305 4421 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7350 4325 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 7350 4325 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 7350 4500 50  0001 C CNN
 	1    7350 4500
 	0    -1   -1   0   
@@ -1095,9 +1095,9 @@ L Switch:SW_Push SW?
 U 1 1 5FD41408
 P 7350 3300
 AR Path="/5FD41408" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FD41408" Ref="SW36"  Part="1" 
+AR Path="/5EE5B30C/5FD41408" Ref="SW_34"  Part="1" 
 AR Path="/5FA6AA33/5FD41408" Ref="SW?"  Part="1" 
-F 0 "SW36" V 7304 3448 50  0000 L CNN
+F 0 "SW_34" V 7304 3448 50  0000 L CNN
 F 1 "Btn" V 7395 3448 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 7350 3500 50  0001 C CNN
 F 3 "~" H 7350 3500 50  0001 C CNN
@@ -1113,7 +1113,7 @@ AR Path="/5EE5B30C/5FD4140E" Ref="D38"  Part="1"
 AR Path="/5FA6AA33/5FD4140E" Ref="D?"  Part="1" 
 F 0 "D38" V 7396 3571 50  0000 R CNN
 F 1 "1N4153" V 7305 3571 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7350 3475 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 7350 3475 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 7350 3650 50  0001 C CNN
 	1    7350 3650
 	0    -1   -1   0   
@@ -1130,9 +1130,9 @@ L Switch:SW_Push SW?
 U 1 1 5FD41418
 P 7350 2450
 AR Path="/5FD41418" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FD41418" Ref="SW35"  Part="1" 
+AR Path="/5EE5B30C/5FD41418" Ref="SW_29"  Part="1" 
 AR Path="/5FA6AA33/5FD41418" Ref="SW?"  Part="1" 
-F 0 "SW35" V 7304 2598 50  0000 L CNN
+F 0 "SW_29" V 7304 2598 50  0000 L CNN
 F 1 "Btn" V 7395 2598 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 7350 2650 50  0001 C CNN
 F 3 "~" H 7350 2650 50  0001 C CNN
@@ -1148,7 +1148,7 @@ AR Path="/5EE5B30C/5FD4141E" Ref="D37"  Part="1"
 AR Path="/5FA6AA33/5FD4141E" Ref="D?"  Part="1" 
 F 0 "D37" V 7396 2721 50  0000 R CNN
 F 1 "1N4153" V 7305 2721 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7350 2625 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 7350 2625 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 7350 2800 50  0001 C CNN
 	1    7350 2800
 	0    -1   -1   0   
@@ -1162,9 +1162,9 @@ L Switch:SW_Push SW?
 U 1 1 5FD41426
 P 7350 1600
 AR Path="/5FD41426" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/5FD41426" Ref="SW34"  Part="1" 
+AR Path="/5EE5B30C/5FD41426" Ref="SW_24"  Part="1" 
 AR Path="/5FA6AA33/5FD41426" Ref="SW?"  Part="1" 
-F 0 "SW34" V 7304 1748 50  0000 L CNN
+F 0 "SW_24" V 7304 1748 50  0000 L CNN
 F 1 "Btn" V 7395 1748 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 7350 1800 50  0001 C CNN
 F 3 "~" H 7350 1800 50  0001 C CNN
@@ -1180,7 +1180,7 @@ AR Path="/5EE5B30C/5FD4142C" Ref="D36"  Part="1"
 AR Path="/5FA6AA33/5FD4142C" Ref="D?"  Part="1" 
 F 0 "D36" V 7396 1871 50  0000 R CNN
 F 1 "1N4153" V 7305 1871 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7350 1775 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 7350 1775 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 7350 1950 50  0001 C CNN
 	1    7350 1950
 	0    -1   -1   0   
@@ -1228,9 +1228,9 @@ L Switch:SW_Push SW?
 U 1 1 600D98D4
 P 4050 4150
 AR Path="/600D98D4" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/600D98D4" Ref="SW21"  Part="1" 
+AR Path="/5EE5B30C/600D98D4" Ref="SW_20"  Part="1" 
 AR Path="/5FA6AA33/600D98D4" Ref="SW?"  Part="1" 
-F 0 "SW21" V 4004 4298 50  0000 L CNN
+F 0 "SW_20" V 4004 4298 50  0000 L CNN
 F 1 "Btn" V 4095 4298 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 4050 4350 50  0001 C CNN
 F 3 "~" H 4050 4350 50  0001 C CNN
@@ -1246,7 +1246,7 @@ AR Path="/5EE5B30C/600D98DA" Ref="D23"  Part="1"
 AR Path="/5FA6AA33/600D98DA" Ref="D?"  Part="1" 
 F 0 "D23" V 4096 4421 50  0000 R CNN
 F 1 "1N4153" V 4005 4421 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4050 4325 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 4050 4325 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 4050 4500 50  0001 C CNN
 	1    4050 4500
 	0    -1   -1   0   
@@ -1264,9 +1264,9 @@ L Switch:SW_Push SW?
 U 1 1 600D98E5
 P 4050 3300
 AR Path="/600D98E5" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/600D98E5" Ref="SW20"  Part="1" 
+AR Path="/5EE5B30C/600D98E5" Ref="SW_15"  Part="1" 
 AR Path="/5FA6AA33/600D98E5" Ref="SW?"  Part="1" 
-F 0 "SW20" V 4004 3448 50  0000 L CNN
+F 0 "SW_15" V 4004 3448 50  0000 L CNN
 F 1 "Btn" V 4095 3448 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 4050 3500 50  0001 C CNN
 F 3 "~" H 4050 3500 50  0001 C CNN
@@ -1282,7 +1282,7 @@ AR Path="/5EE5B30C/600D98EB" Ref="D22"  Part="1"
 AR Path="/5FA6AA33/600D98EB" Ref="D?"  Part="1" 
 F 0 "D22" V 4096 3571 50  0000 R CNN
 F 1 "1N4153" V 4005 3571 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4050 3475 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 4050 3475 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 4050 3650 50  0001 C CNN
 	1    4050 3650
 	0    -1   -1   0   
@@ -1298,9 +1298,9 @@ L Switch:SW_Push SW?
 U 1 1 600D98F4
 P 4050 2450
 AR Path="/600D98F4" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/600D98F4" Ref="SW19"  Part="1" 
+AR Path="/5EE5B30C/600D98F4" Ref="SW_10"  Part="1" 
 AR Path="/5FA6AA33/600D98F4" Ref="SW?"  Part="1" 
-F 0 "SW19" V 4004 2598 50  0000 L CNN
+F 0 "SW_10" V 4004 2598 50  0000 L CNN
 F 1 "Btn" V 4095 2598 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 4050 2650 50  0001 C CNN
 F 3 "~" H 4050 2650 50  0001 C CNN
@@ -1316,7 +1316,7 @@ AR Path="/5EE5B30C/600D98FA" Ref="D21"  Part="1"
 AR Path="/5FA6AA33/600D98FA" Ref="D?"  Part="1" 
 F 0 "D21" V 4096 2721 50  0000 R CNN
 F 1 "1N4153" V 4005 2721 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4050 2625 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 4050 2625 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 4050 2800 50  0001 C CNN
 	1    4050 2800
 	0    -1   -1   0   
@@ -1330,9 +1330,9 @@ L Switch:SW_Push SW?
 U 1 1 600D9902
 P 4050 1600
 AR Path="/600D9902" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/600D9902" Ref="SW18"  Part="1" 
+AR Path="/5EE5B30C/600D9902" Ref="SW_5"  Part="1" 
 AR Path="/5FA6AA33/600D9902" Ref="SW?"  Part="1" 
-F 0 "SW18" V 4004 1748 50  0000 L CNN
+F 0 "SW_5" V 4004 1748 50  0000 L CNN
 F 1 "Btn" V 4095 1748 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 4050 1800 50  0001 C CNN
 F 3 "~" H 4050 1800 50  0001 C CNN
@@ -1348,7 +1348,7 @@ AR Path="/5EE5B30C/600D9908" Ref="D20"  Part="1"
 AR Path="/5FA6AA33/600D9908" Ref="D?"  Part="1" 
 F 0 "D20" V 4096 1871 50  0000 R CNN
 F 1 "1N4153" V 4005 1871 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4050 1775 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 4050 1775 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 4050 1950 50  0001 C CNN
 	1    4050 1950
 	0    -1   -1   0   
@@ -1369,9 +1369,9 @@ L Switch:SW_Push SW?
 U 1 1 600E3C0B
 P 7900 4150
 AR Path="/600E3C0B" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/600E3C0B" Ref="SW41"  Part="1" 
+AR Path="/5EE5B30C/600E3C0B" Ref="SW_40"  Part="1" 
 AR Path="/5FA6AA33/600E3C0B" Ref="SW?"  Part="1" 
-F 0 "SW41" V 7854 4298 50  0000 L CNN
+F 0 "SW_40" V 7854 4298 50  0000 L CNN
 F 1 "Btn" V 7945 4298 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 7900 4350 50  0001 C CNN
 F 3 "~" H 7900 4350 50  0001 C CNN
@@ -1387,7 +1387,7 @@ AR Path="/5EE5B30C/600E3C11" Ref="D43"  Part="1"
 AR Path="/5FA6AA33/600E3C11" Ref="D?"  Part="1" 
 F 0 "D43" V 7946 4421 50  0000 R CNN
 F 1 "1N4153" V 7855 4421 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7900 4325 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 7900 4325 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 7900 4500 50  0001 C CNN
 	1    7900 4500
 	0    -1   -1   0   
@@ -1405,9 +1405,9 @@ L Switch:SW_Push SW?
 U 1 1 600E3C1C
 P 7900 3300
 AR Path="/600E3C1C" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/600E3C1C" Ref="SW40"  Part="1" 
+AR Path="/5EE5B30C/600E3C1C" Ref="SW_35"  Part="1" 
 AR Path="/5FA6AA33/600E3C1C" Ref="SW?"  Part="1" 
-F 0 "SW40" V 7854 3448 50  0000 L CNN
+F 0 "SW_35" V 7854 3448 50  0000 L CNN
 F 1 "Btn" V 7945 3448 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 7900 3500 50  0001 C CNN
 F 3 "~" H 7900 3500 50  0001 C CNN
@@ -1423,7 +1423,7 @@ AR Path="/5EE5B30C/600E3C22" Ref="D42"  Part="1"
 AR Path="/5FA6AA33/600E3C22" Ref="D?"  Part="1" 
 F 0 "D42" V 7946 3571 50  0000 R CNN
 F 1 "1N4153" V 7855 3571 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7900 3475 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 7900 3475 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 7900 3650 50  0001 C CNN
 	1    7900 3650
 	0    -1   -1   0   
@@ -1439,9 +1439,9 @@ L Switch:SW_Push SW?
 U 1 1 600E3C2B
 P 7900 2450
 AR Path="/600E3C2B" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/600E3C2B" Ref="SW39"  Part="1" 
+AR Path="/5EE5B30C/600E3C2B" Ref="SW_30"  Part="1" 
 AR Path="/5FA6AA33/600E3C2B" Ref="SW?"  Part="1" 
-F 0 "SW39" V 7854 2598 50  0000 L CNN
+F 0 "SW_30" V 7854 2598 50  0000 L CNN
 F 1 "Btn" V 7945 2598 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 7900 2650 50  0001 C CNN
 F 3 "~" H 7900 2650 50  0001 C CNN
@@ -1457,7 +1457,7 @@ AR Path="/5EE5B30C/600E3C31" Ref="D41"  Part="1"
 AR Path="/5FA6AA33/600E3C31" Ref="D?"  Part="1" 
 F 0 "D41" V 7946 2721 50  0000 R CNN
 F 1 "1N4153" V 7855 2721 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7900 2625 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 7900 2625 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 7900 2800 50  0001 C CNN
 	1    7900 2800
 	0    -1   -1   0   
@@ -1471,9 +1471,9 @@ L Switch:SW_Push SW?
 U 1 1 600E3C39
 P 7900 1600
 AR Path="/600E3C39" Ref="SW?"  Part="1" 
-AR Path="/5EE5B30C/600E3C39" Ref="SW38"  Part="1" 
+AR Path="/5EE5B30C/600E3C39" Ref="SW_25"  Part="1" 
 AR Path="/5FA6AA33/600E3C39" Ref="SW?"  Part="1" 
-F 0 "SW38" V 7854 1748 50  0000 L CNN
+F 0 "SW_25" V 7854 1748 50  0000 L CNN
 F 1 "Btn" V 7945 1748 50  0000 L CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm" H 7900 1800 50  0001 C CNN
 F 3 "~" H 7900 1800 50  0001 C CNN
@@ -1489,7 +1489,7 @@ AR Path="/5EE5B30C/600E3C3F" Ref="D40"  Part="1"
 AR Path="/5FA6AA33/600E3C3F" Ref="D?"  Part="1" 
 F 0 "D40" V 7946 1871 50  0000 R CNN
 F 1 "1N4153" V 7855 1871 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 7900 1775 50  0001 C CNN
+F 2 "hw:D_DO-35_SOD27_P7.62mm_Horizontal_No_Ref" H 7900 1775 50  0001 C CNN
 F 3 "http://www.microsemi.com/document-portal/doc_view/11580-lds-0239" H 7900 1950 50  0001 C CNN
 	1    7900 1950
 	0    -1   -1   0   

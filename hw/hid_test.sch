@@ -628,7 +628,7 @@ U 1 1 5EC0D035
 P 10150 1100
 F 0 "U3" H 10150 1342 50  0000 C CNN
 F 1 "LD1117S33TR" H 10150 1251 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 10150 1300 50  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 10150 1300 50  0001 C CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 10250 850 50  0001 C CNN
 	1    10150 1100
 	1    0    0    -1  
