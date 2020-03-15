@@ -1066,4 +1066,78 @@ F 3 "~" H 6250 1700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5550 1700 5850 1700
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5EBFBDFC
+P 9500 6100
+AR Path="/5EE5B30C/5EBFBDFC" Ref="H?"  Part="1" 
+AR Path="/5EBFBDFC" Ref="H5"  Part="1" 
+F 0 "H5" H 9600 6149 50  0000 L CNN
+F 1 "Hole" H 9600 6058 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 9500 6100 50  0001 C CNN
+F 3 "~" H 9500 6100 50  0001 C CNN
+	1    9500 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5EBFBE02
+P 10400 6100
+AR Path="/5EE5B30C/5EBFBE02" Ref="H?"  Part="1" 
+AR Path="/5EBFBE02" Ref="H8"  Part="1" 
+F 0 "H8" H 10500 6149 50  0000 L CNN
+F 1 "Hole" H 10500 6058 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 10400 6100 50  0001 C CNN
+F 3 "~" H 10400 6100 50  0001 C CNN
+	1    10400 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5EBFBE08
+P 10100 6100
+AR Path="/5EE5B30C/5EBFBE08" Ref="H?"  Part="1" 
+AR Path="/5EBFBE08" Ref="H7"  Part="1" 
+F 0 "H7" H 10200 6149 50  0000 L CNN
+F 1 "Hole" H 10200 6058 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 10100 6100 50  0001 C CNN
+F 3 "~" H 10100 6100 50  0001 C CNN
+	1    10100 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5EBFBE0E
+P 9800 6100
+AR Path="/5EE5B30C/5EBFBE0E" Ref="H?"  Part="1" 
+AR Path="/5EBFBE0E" Ref="H6"  Part="1" 
+F 0 "H6" H 9900 6149 50  0000 L CNN
+F 1 "Hole" H 9900 6058 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 9800 6100 50  0001 C CNN
+F 3 "~" H 9800 6100 50  0001 C CNN
+	1    9800 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 6200 9800 6200
+Wire Wire Line
+	9800 6200 10100 6200
+Connection ~ 9800 6200
+Wire Wire Line
+	10100 6200 10400 6200
+Connection ~ 10100 6200
+Wire Wire Line
+	10400 6200 10750 6200
+Connection ~ 10400 6200
+$Comp
+L power:GND #PWR0125
+U 1 1 5EC0326C
+P 10750 6200
+F 0 "#PWR0125" H 10750 5950 50  0001 C CNN
+F 1 "GND" H 10755 6027 50  0000 C CNN
+F 2 "" H 10750 6200 50  0001 C CNN
+F 3 "" H 10750 6200 50  0001 C CNN
+	1    10750 6200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1523,7 +1523,7 @@ $EndComp
 Wire Wire Line
 	2350 7150 2550 7150
 Wire Wire Line
-	2550 7150 2550 7550
+	2550 7150 2550 7450
 Wire Wire Line
 	2350 7050 2550 7050
 Wire Wire Line
@@ -1643,4 +1643,62 @@ Wire Wire Line
 	2350 6850 3550 6850
 Wire Wire Line
 	2350 6950 3450 6950
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5EB7A52B
+P 1300 7350
+F 0 "H1" H 1400 7399 50  0000 L CNN
+F 1 "Hole" H 1400 7308 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 1300 7350 50  0001 C CNN
+F 3 "~" H 1300 7350 50  0001 C CNN
+	1    1300 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5EB932BF
+P 2200 7350
+F 0 "H4" H 2300 7399 50  0000 L CNN
+F 1 "Hole" H 2300 7308 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 2200 7350 50  0001 C CNN
+F 3 "~" H 2200 7350 50  0001 C CNN
+	1    2200 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5EB9AA50
+P 1900 7350
+F 0 "H3" H 2000 7399 50  0000 L CNN
+F 1 "Hole" H 2000 7308 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 1900 7350 50  0001 C CNN
+F 3 "~" H 1900 7350 50  0001 C CNN
+	1    1900 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5EBA215C
+P 1600 7350
+F 0 "H2" H 1700 7399 50  0000 L CNN
+F 1 "Hole" H 1700 7308 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 1600 7350 50  0001 C CNN
+F 3 "~" H 1600 7350 50  0001 C CNN
+	1    1600 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 7450 1600 7450
+Wire Wire Line
+	1600 7450 1900 7450
+Connection ~ 1600 7450
+Wire Wire Line
+	1900 7450 2200 7450
+Connection ~ 1900 7450
+Wire Wire Line
+	2200 7450 2550 7450
+Connection ~ 2200 7450
+Connection ~ 2550 7450
+Wire Wire Line
+	2550 7450 2550 7550
 $EndSCHEMATC
