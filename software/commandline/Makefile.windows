@@ -1,0 +1,5 @@
+include Makefile
+
+USBFLAGS = -I/usr/local/mingw/include
+USBLIBS = -L/usr/local/mingw/lib -lusb
+EXE_SUFFIX = .exe
