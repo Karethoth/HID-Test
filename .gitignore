@@ -1,7 +1,9 @@
 *.bak
+*-bak
 *cache.lib
 *.o
 *.elf
 *.hex
 *.sw?
 software/libs/v_usb/*
+software/commandline/hid-test

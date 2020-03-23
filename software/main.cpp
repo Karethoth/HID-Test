@@ -10,7 +10,7 @@
 extern "C" {
   #include "usbdrv.h"
   #include "oddebug.h"
-  #include "requests.hpp"
+  #include "requests.h"
 }
 
 #define REG_TO_INT(p) (int)&p
@@ -203,17 +203,24 @@ usbRequest_t    *rq = (usbRequest_t*)(data);
 
     if ((rq->bmRequestType & USBRQ_TYPE_MASK) == USBRQ_TYPE_VENDOR)
     {
-        //DBG1(0x50, &rq->bRequest, 1);
-        if (rq->bRequest == CUSTOM_RQ_SET_STATUS){
+        if (rq->bRequest == CMD_DISPLAY_RESET){
+          LCD_init();
+          LCD_Orientation(LCD_ROT_90);
+          LCD_FillScreen(LCD_RGB(255,0,0));
+        }
+
+        else if (rq->bRequest == CMD_DISPLAY_CLEAR){
             if (rq->wValue.bytes[0] & 1)
             {
+              LCD_FillScreen(LCD_RGB(255,255,255));
             }
             else
             {
-
+              LCD_FillScreen(LCD_RGB(0,0,0));
             }
         }
-        else if (rq->bRequest == CUSTOM_RQ_GET_STATUS)
+
+        else if (rq->bRequest == 3)
         {
             static uchar dataBuffer[1];     /* buffer must stay valid when usbFunctionSetup returns */
             dataBuffer[0] = 0x00;
