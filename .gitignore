@@ -5,5 +5,6 @@
 *.elf
 *.hex
 *.sw?
+*.vs
 software/libs/v_usb/*
 software/commandline/hid-test

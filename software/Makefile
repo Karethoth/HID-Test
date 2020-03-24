@@ -3,7 +3,7 @@ CLOCK      = 20000000
 PROGRAMMER = -c usbtiny 
 OBJECTS    = libs/usbdrv/usbdrv.o libs/usbdrv/usbdrvasm.o libs/usbdrv/oddebug.o ILI9163.o main.o
 OFLAGS     = -std=c++17
-FUSES      = -U lfuse:w:0xe7:m -U hfuse:w:0x99:m -U efuse:w:0xff:m
+FUSES      = -U lfuse:w:0xe7:m -U hfuse:w:0xd9:m -U efuse:w:0xff:m
 INCLUDES   = -Ilibs/usbdrv -I.
 
 AVRDUDE = avrdude $(PROGRAMMER) -p $(DEVICE)
