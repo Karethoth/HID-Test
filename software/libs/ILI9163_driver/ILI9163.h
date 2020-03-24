@@ -68,7 +68,7 @@
 //#define _LCD_16BIT      /* default: 16 BPP (pixels directly addressable           */
 //#define _LCD_18BIT      /* 18 BPP, very slow due to 24 BPP serial transfer format */
 
-#define _LCD_ROTATION_SUPPORT /* optional: support LCD_Orientation(),               */
+//#define _LCD_ROTATION_SUPPORT /* optional: support LCD_Orientation(),               */
                               /*           rotation by n*90 degrees                 */
 
 #define _LCD_PUTLINE_SUPPORT /* write a line of 8 Bit paletted pixels and convert   */

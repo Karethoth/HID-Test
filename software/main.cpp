@@ -46,20 +46,19 @@ Keypad<
 > keypad{};
 
 
-using DisplayResetPin   = IO_Pin<REG_TO_INT(DDRC), REG_TO_INT(PORTC), REG_TO_INT(PINC), PC3>;
-using DisplaySelectPin1 = IO_Pin<REG_TO_INT(DDRC), REG_TO_INT(PORTC), REG_TO_INT(PINC), PC4>;
-using DisplaySelectPin2 = IO_Pin<REG_TO_INT(DDRC), REG_TO_INT(PORTC), REG_TO_INT(PINC), PC5>;
-using DisplaySelectPin3 = IO_Pin<REG_TO_INT(DDRC), REG_TO_INT(PORTC), REG_TO_INT(PINC), PC6>;
-using DisplaySelectPin4 = IO_Pin<REG_TO_INT(DDRC), REG_TO_INT(PORTC), REG_TO_INT(PINC), PC7>;
+using DisplayResetPin = IO_Pin<REG_TO_INT(DDRC), REG_TO_INT(PORTC), REG_TO_INT(PINC), PC3>;
+using PanelSelectPin1 = IO_Pin<REG_TO_INT(DDRC), REG_TO_INT(PORTC), REG_TO_INT(PINC), PC4>;
+using PanelSelectPin2 = IO_Pin<REG_TO_INT(DDRC), REG_TO_INT(PORTC), REG_TO_INT(PINC), PC5>;
+using PanelSelectPin3 = IO_Pin<REG_TO_INT(DDRC), REG_TO_INT(PORTC), REG_TO_INT(PINC), PC6>;
+using PanelSelectPin4 = IO_Pin<REG_TO_INT(DDRC), REG_TO_INT(PORTC), REG_TO_INT(PINC), PC7>;
+using PanelArea       = DisplayPanelArea<>;
 
 Display<
-DisplayResetPin,
-DisplaySelectPin1,
-DisplaySelectPin2,
-DisplaySelectPin3,
-DisplaySelectPin4,
-128,
-128
+  DisplayResetPin,
+  Panel<PanelSelectPin1, PanelArea, LCD_ROT_0>,
+  Panel<PanelSelectPin2, PanelArea, LCD_ROT_90>,
+  Panel<PanelSelectPin3, PanelArea, LCD_ROT_180>,
+  Panel<PanelSelectPin4, PanelArea, LCD_ROT_270>
 > display{};
 
 
@@ -140,8 +139,8 @@ void usb_init()
 void init()
 {
   keypad.init();
-  usb_init();
   display.init();
+  usb_init();
 }
 
 
